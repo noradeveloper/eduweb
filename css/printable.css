@@ -1,0 +1,244 @@
+/*-----------printable-------------*/
+
+@media print {
+    body {
+        background: #fff;
+        column-count: 2;
+        -webkit-column-count: 2;
+        /* Chrome, Safari, Opera */
+        
+        -moz-column-count: 2;
+        /* Firefox */
+    }
+    .do-not-print,
+    .btn-secondary,
+    .btn-primary,
+    .slide,
+    .carousel {
+        display: none !important;
+    }
+    .do-print {
+        margin-top: -245px;
+    }
+    .card {
+        background: #fff;
+        border-top: 0px;
+        margin-bottom: -40px;
+    }
+    /* ------------ circle ----------*/
+    
+    .circle {
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        border: 0.5px solid #4A4A4A;
+        text-align: center;
+        background: transparent;
+        margin-left: 0px;
+        margin-right: 3px;
+    }
+    .circle > h2 {
+        font-size: 2em;
+        margin-bottom: 10px;
+    }
+    .circle > p {
+        font-size: 0.70em;
+    }
+    /*------------Radar Chart-------------*/
+    
+    #chart {
+        position: relative;
+        top: 0;
+        left: -30px;
+        margin-bottom: -20px;
+    }
+    /*----img smartable----*/
+    
+    .smartable-right {
+        width: 80px;
+        height: 80px;
+        margin-left: 200px;
+    }
+    /*------------ Typography -------------------------------*/
+    
+    p {
+        font-size: 6pt;
+    }
+    h2 {
+        margin: 0px;
+        margin-bottom: 2px;
+        text-transform: uppercase;
+        color: #464646;
+        font-size: 12pt;
+        font-weight: bolder;
+        letter-spacing: 2px;
+    }
+    h3 {
+        font-size: 12pt;
+        color: #18AB88;
+    }
+    h4 {
+        text-transform: capitalize;
+    }
+    .subheading {
+        color: #909090;
+        font-size: 12pt;
+    }
+    ul.dashed {
+        margin-top: -10px;
+        list-style-type: none;
+        margin-left: -1px;
+        padding-left: 0px;
+        font-size: 7pt;
+    }
+    ul.dashed > li:before {
+        content: "-";
+        text-indent: 0px;
+    }
+    .date,
+    label {
+        font-size: 8pt;
+    }
+    .jumbotron {
+        margin: 0px;
+        padding-left: 20px;
+        margin-bottom: -20px;
+    }
+    .jumbotron p {
+        font-size: 8pt;
+    }
+    .print-img {
+        margin-left: 0;
+        height: 40px;
+        width: 40px;
+        float: left;
+        margin-right: 9px;
+        margin-left: 0px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    .caption {
+        font-size: 6pt;
+        line-height: 110%;
+    }
+}
+@media print and (color) {
+    * {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+        color: #000 !important; // Black prints faster: h5bp.com/s
+    }
+    body {
+        background: #fff;
+        column-count: 2;
+        -webkit-column-count: 2;
+        /* Chrome, Safari, Opera */
+        
+        -moz-column-count: 2;
+        /* Firefox */
+    }
+    .do-print {
+        margin-top: -245px;
+    }
+    .card {
+        background: #fff;
+        border-top: 0px;
+        margin-bottom: -40px;
+    }
+    /* ------------ circle ----------*/
+    
+    .circle {
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        border: 0.5px solid #4A4A4A;
+        text-align: center;
+        background: transparent;
+        margin-left: 0px;
+        margin-right: 3px;
+    }
+    .circle > h2 {
+        font-size: 2em;
+        margin-bottom: 10px;
+    }
+    .circle > p {
+        font-size: 0.70em;
+    }
+    /*------------Radar Chart-------------*/
+    
+    #chart {
+        position: relative;
+        top: 0;
+        left: -30px;
+        margin-bottom: -20px;
+    }
+    /*----img smartable----*/
+    
+    .smartable-right {
+        width: 100px;
+        height: 100px;
+        margin-left: 200px;
+    }
+    /*------------ Typography -------------------------------*/
+    
+    p {
+        font-size: 6pt;
+    }
+    h2 {
+        margin: 0px;
+        margin-bottom: 2px;
+        text-transform: uppercase;
+        color: #464646 !important;
+        font-size: 12pt;
+        font-weight: bolder;
+        letter-spacing: 2px;
+    }
+    h3 {
+        font-size: 12pt;
+        color: #18AB88 !important;
+    }
+    h4 {
+        text-transform: capitalize;
+    }
+    .subheading {
+        color: #909090 !important;
+        font-size: 12pt;
+    }
+    ul.dashed {
+        list-style-type: none;
+        margin-top: -10px;
+        margin-left: -1px;
+        padding-left: 0px;
+        font-size: 7pt;
+    }
+    ul.dashed > li:before {
+        content: "-";
+        text-indent: 0px;
+    }
+    .date,
+    label {
+        font-size: 8pt;
+    }
+    .jumbotron {
+        margin-bottom: -20px;
+        margin: 0px;
+        padding-left: 20px;
+    }
+    .jumbotron p {
+        font-size: 8pt;
+    }
+    .print-img {
+        margin-left: 0;
+        height: 40px;
+        width: 40px;
+        float: left;
+        margin-right: 9px;
+        margin-left: 0px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    .caption {
+        font-size: 6pt;
+        line-height: 110%;
+    }
+}

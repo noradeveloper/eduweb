@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Careers</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/smartable-theme.css">
+    <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+    <link rel="stylesheet" href="./font/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/bootstrap-select.min.css">
+    <link href="css/jasny-bootstrap.min.css" rel="stylesheet" media="screen">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-static-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle pull-left" data-toggle="offcanvas" data-target="#mobile-menu" data-canvas="body">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand hidden-xs" href="#"> <img src="./img/logos/logo.png" alt="">
+                </a>
+                <a class="navbar-brand visible-xs" href="#"><img class="logo-mobile" src="./img/logos/logo-small.png" alt="">
+                </a>
+                <div class="toggle-badge pull-right">
+                    <a type="button" class="navbar-toggle" data-toggle="collapse" data-target="#notifications" href="#"> <span class="badge badge-mobile">2</span> </a>
+                </div>
+            </div>
+            <div class="collapse navbar-collapse" id="mobile-menu">
+                <div class="user_avater hidden-xs">
+                    <a href=""> <span class="badge">2</span> </a>
+                    <a href=""> <img class="user_img img-circle " src="./img/user/avatar.png" height="48" width="48" alt=""> </a>
+                </div>
+                <div class="user_avater visible-xs">
+                    <li>
+                        <a href=""> <img class="user_img img-circle " src="./img/user/avatar.png" alt=""> </a>
+                    </li>
+                    <li> <a href="./settings.html">Settings</a> </li>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li> <a href="./dashboard.html">Dashboard</a> </li>
+                    <li> <a href="./smartcv.html">SmartCV</a> </li>
+                    <li class="active"> <a href="./careers.html">Careers</a> </li>
+                    <li> <a href="./personality.html">Personality</a> </li>
+                    <li> <a href="./faqs.html">FAQs</a> </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+    <!-- mobile notifications -->
+    <div class="collapse notifications" id="notifications">
+        <h2>Notifications</h2>
+        <p>We added five new missions to Smartable today! Don’t forget to check them out to earn points and level up.</p>
+        <p class="date pull-right">2 Hours Ago</p>
+        <br>
+        <hr>
+        <p>A new workshop was just announced in your area! </p>
+        <p class="date pull-right">3 Hours Ago</p>
+    </div>
+    <!-- / mobile notifications -->
+    <!-- page header  --------------------------------------------------------------------------------------->
+    <div class="container">
+        <!-- page title -->
+        <div class="row">
+            <div class="col-sm-9">
+                <h1>careers</h1>
+                <p>Career are ordered by their relevance to your personality traits.</p>
+            </div>
+            <div class="col-sm-3 search_row">
+                <div class="dropdown">
+                    <div class="input-group">
+                        <div class="search_box">
+                            <input type="text" class="form-control search_input" data-toggle="dropdown" size="40" />
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                            <div class="dropdown-menu open search_labels" role="menu" aria-labelledby="advancedSearch">
+                                <form class="search_form">
+                                    <button type="button" class="close" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">&times;</button>
+                                    <h4>advanced search</h4>
+                                    <div class="form-group-lg">
+                                        <label for="industry" class="search_label">industry</label>
+                                        <select class="selectpicker form-control" id="industry" data-toggle="dropdown" aria-haspopup="true">
+                                            <option value="0">All Categories</option>
+                                            <option value="1">design</option>
+                                            <option value="2">computer science </option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group-lg">
+                                        <label for="level" class="search_label">level</label>
+                                        <select class="selectpicker form-control">
+                                            <option value="0">All Categories</option>
+                                            <option value="1">entry</option>
+                                            <option value="2">mid</option>
+                                            <option value="3">management</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group-lg">
+                                        <label for="location" class="search_label">location offered</label>
+                                        <select class="selectpicker form-control">
+                                            <option value="0">All Categories</option>
+                                            <option value="1">united states</option>
+                                            <option value="2">Saudi Arabia</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group-sm">
+                                        <label for="personality" class="search_label">personality traits</label>
+                                        <div class="items">
+                                            <div class="btn-filter">
+                                                <input class="btn-filter" id="box-0-1" name="checkbox-group0" type="checkbox" hidden />
+                                                <label for="box-0-1">persuading</label>
+                                            </div>
+                                            <div class="btn-filter">
+                                                <input class="btn-filter" id="box-0-2" name="checkbox-group0" type="checkbox" hidden />
+                                                <label for="box-0-2">selling</label>
+                                            </div>
+                                            <div class="btn-filter">
+                                                <input class="btn-filter" id="box-0-3" name="checkbox-group0" type="checkbox" hidden />
+                                                <label for="box-0-3">solving</label>
+                                            </div>
+                                            <div class="btn-filter">
+                                                <input class="btn-filter" id="box-0-4" name="checkbox-group0" type="checkbox" hidden />
+                                                <label for="box-0-4">managing</label>
+                                            </div>
+                                            <div class="btn-filter">
+                                                <input class="btn-filter" id="box-0-5" name="checkbox-group0" type="checkbox" hidden />
+                                                <label for="box-0-5">selling</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /.form-group-sm -->
+                                </form>
+                            </div>
+                            <!-- /.dropdown-menu -->
+                        </div>
+                    </div>
+                    <!-- /.input group -->
+                </div>
+                <!-- /.dropdown -->
+            </div>
+        </div>
+        <!-- /.row -->
+        <!--page content -->
+        <div class="row">
+            <div class="col-xs-12 col-sm-4">
+                <div class="card_v2">
+                    <h2 class="career_title">video game designer</h2>
+                    <img src="./img/dashboard/career/career.png" class="img-responsive career_img" alt="">
+                    <div class="caption">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id mi velit. Nunc et neque quis massa vestibulum venenatis </p>
+                        <hr class="hr_margin" />
+                        <p class="career_subheading"> required education: <span class="information"> high school </span>
+                        </p>
+                        <p class="career_subheading"> starting salrty: <span class="information"> $50,000</span>
+                        </p>
+                        <p class="career_subheading"> median salarty:<span class="information"> $80,000 </span>
+                        </p>
+                        <hr class="hr_margin" />
+                        <p class="career_subheading">personality traits:</p>
+                        <div class="btn-filter">
+                            <input class="btn-filter" id="box2" name="checkbox-group1" type="checkbox" hidden />
+                            <label for="box2">persuading</label>
+                        </div>
+                        <div class="btn-filter">
+                            <input class="btn-filter" id="box3" name="checkbox-group1" type="checkbox" hidden />
+                            <label for="box3">selling</label>
+                        </div>
+                        <div class="btn-filter">
+                            <input class="btn-filter" id="box4" name="checkbox-group1" type="checkbox" hidden />
+                            <label for="box4">solving</label>
+                        </div>
+                        <div class="btn-filter">
+                            <input class="btn-filter" id="box5" name="checkbox-group1" type="checkbox" hidden />
+                            <label for="box5">managing</label>
+                        </div>
+                        <div class="btn-filter">
+                            <input class="btn-filter" id="box6" name="checkbox-group1" type="checkbox" hidden />
+                            <label for="box6">selling</label>
+                        </div>
+                        <hr class="hr_margin" />
+                        <button class="btn-secondary btn-md" type="button"> learn more </button>
+                        <button class="btn-primary btn-md" type="button" data-toggle="modal" data-target=".modal-sm-1"> explore </button>
+                    </div>
+                </div>
+            </div>
+            <!-- / 1st col  -->
+            <div class="col-xs-12 col-sm-4">
+                <div class="card_v2">
+                    <h2 class="career_title">video game designer</h2>
+                    <img src="./img/dashboard/career/career.png" class="img-responsive career_img" alt="">
+                    <div class="caption">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id mi velit. Nunc et neque quis massa vestibulum venenatis </p>
+                        <hr class="hr_margin" />
+                        <p class="career_subheading"> required education: <span class="information"> high school </span>
+                        </p>
+                        <p class="career_subheading"> starting salrty: <span class="information"> $50,000</span>
+                        </p>
+                        <p class="career_subheading"> median salarty:<span class="information"> $80,000 </span>
+                        </p>
+                        <hr class="hr_margin" />
+                        <p class="career_subheading">personality traits:</p>
+                        <div class="btn-filter">
+                            <input class="btn-filter" id="box-2-7" name="checkbox-group2" type="checkbox" hidden />
+                            <label for="box-2-7">persuading</label>
+                        </div>
+                        <div class="btn-filter">
+                            <input class="btn-filter" id="box-2-8" name="checkbox-group2" type="checkbox" hidden />
+                            <label for="box-2-8">selling</label>
+                        </div>
+                        <div class="btn-filter">
+                            <input class="btn-filter" id="box-2-9" name="checkbox-group2" type="checkbox" hidden />
+                            <label for="box-2-9">solving</label>
+                        </div>
+                        <div class="btn-filter">
+                            <input class="btn-filter" id="box-2-10" name="checkbox-group2" type="checkbox" hidden />
+                            <label for="box-2-10">managing</label>
+                        </div>
+                        <div class="btn-filter">
+                            <input class="btn-filter" id="box-2-11" name="checkbox-group2" type="checkbox" hidden />
+                            <label for="box-2-11">selling</label>
+                        </div>
+                        <hr class="hr_margin" />
+                        <button class="btn-secondary btn-md" type="button"> learn more </button>
+                        <button class="btn-primary btn-md" type="button" data-toggle="modal" data-target=".modal-sm-2"> explore </button>
+                    </div>
+                </div>
+            </div>
+            <!-- / 2st col  -->
+            <div class="col-xs-12 col-sm-4">
+                <div class="card_v2">
+                    <h2 class="career_title">video game designer</h2>
+                    <img src="./img/dashboard/career/career.png" class="img-responsive career_img" alt="">
+                    <div class="caption">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id mi velit. Nunc et neque quis massa vestibulum venenatis </p>
+                        <hr class="hr_margin" />
+                        <p class="career_subheading"> required education: <span class="information"> high school </span>
+                        </p>
+                        <p class="career_subheading"> starting salrty: <span class="information"> $50,000</span>
+                        </p>
+                        <p class="career_subheading"> median salarty:<span class="information"> $80,000 </span>
+                        </p>
+                        <hr class="hr_margin" />
+                        <p class="career_subheading">personality traits:</p>
+                        <div class="btn-filter">
+                            <input class="btn-filter" id="box-3-12" name="checkbox-group3" type="checkbox" hidden />
+                            <label for="box-3-12">persuading</label>
+                        </div>
+                        <div class="btn-filter">
+                            <input class="btn-filter" id="box-3-13" name="checkbox-group3" type="checkbox" hidden />
+                            <label for="box-3-13">selling</label>
+                        </div>
+                        <div class="btn-filter">
+                            <input class="btn-filter" id="box-3-14" name="checkbox-group3" type="checkbox" hidden />
+                            <label for="box-3-14">solving</label>
+                        </div>
+                        <div class="btn-filter">
+                            <input class="btn-filter" id="box-3-15" name="checkbox-group3" type="checkbox" hidden />
+                            <label for="box-3-15">managing</label>
+                        </div>
+                        <div class="btn-filter">
+                            <input class="btn-filter" id="box-3-16" name="checkbox-group3" type="checkbox" hidden />
+                            <label for="box-3-16">selling</label>
+                        </div>
+                        <hr class="hr_margin" />
+                        <button class="btn-secondary btn-md" type="button"> learn more </button>
+                        <button class="btn-primary btn-md" type="button" data-toggle="modal" data-target=".modal-sm-3"> explore </button>
+                    </div>
+                </div>
+            </div>
+            <!-- / 3st col  -->
+            <!-------- Modals ------------------------------------------------------------------------>
+            <div class="modal fade modal-sm-1" tabindex="-1" role="dialog" aria-labelledby="exploreCareer" aria-hidden="true">
+                <div class="modal-dialog modal-md">
+                    <div class="modal-content card" align="center">
+                        <h2>explore career 1</h2>
+                        <p>exploring a career will allow you to start completing relevants missions.</p>
+                        <h3>Graphic Designer</h3>
+                        <div class="row career_explore">
+                            <div class="col-xs-5"><img src="./img/dashboard/career/career.png" class="img-responsive pull-left modal_img" alt="">
+                            </div>
+                            <div class="col-xs-7 career_explore_p">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id mi velit. Nunc et neque quis massa vestibulum venenatis </p>
+                            </div>
+                        </div>
+                        <button type="button" class="btn-cancel btn-md" data-dismiss="modal">cancel</button>
+                        <button class="btn-primary btn-md" type="button"> explore </button>
+                    </div>
+                    <!-- /.modal-content -->
+                </div>
+                <!-- /.modal-dialog -->
+            </div>
+            <!-- /.modal -->
+            <div class="modal fade modal-sm-2" tabindex="-1" role="dialog" aria-labelledby="exploreCareer" aria-hidden="true">
+                <div class="modal-dialog modal-md">
+                    <div class="modal-content card" align="center">
+                        <h2>explore career 2</h2>
+                        <p>exploring a career will allow you to start completing relevants missions.</p>
+                        <h3>Graphic Designer</h3>
+                        <div class="row career_explore">
+                            <div class="col-xs-5"><img src="./img/dashboard/career/career.png" class="img-responsive pull-left modal_img" alt="">
+                            </div>
+                            <div class="col-xs-7 career_explore_p">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id mi velit. Nunc et neque quis massa vestibulum venenatis </p>
+                            </div>
+                        </div>
+                        <button type="button" class="btn-cancel btn-md" data-dismiss="modal">cancel</button>
+                        <button class="btn-primary btn-md" type="button"> explore </button>
+                    </div>
+                    <!-- /.modal-content -->
+                </div>
+                <!-- /.modal-dialog -->
+            </div>
+            <!-- /.modal -->
+            <div class="modal fade modal-sm-3" tabindex="-1" role="dialog" aria-labelledby="exploreCareer" aria-hidden="true">
+                <div class="modal-dialog modal-md">
+                    <div class="modal-content card" align="center">
+                        <h2>explore career 3</h2>
+                        <p>exploring a career will allow you to start completing relevants missions.</p>
+                        <h3>Graphic Designer</h3>
+                        <div class="row career_explore">
+                            <div class="col-xs-5">
+                                <img src="./img/dashboard/career/career.png" class="img-responsive pull-left modal_img" alt="">
+                            </div>
+                            <div class="col-xs-7 career_explore_p">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id mi velit. Nunc et neque quis massa vestibulum venenatis </p>
+                            </div>
+                        </div>
+                        <button type="button" class="btn-cancel btn-md" data-dismiss="modal">cancel</button>
+                        <button class="btn-primary btn-md" type="button"> explore </button>
+                    </div>
+                    <!-- /.modal-content -->
+                </div>
+                <!-- /.modal-dialog -->
+            </div>
+            <!-- /.modal -->
+        </div>
+        <!-- /.row  -->
+    </div>
+    <!-- /.container  -->
+    <!-------------mobile nav------------------>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="js/jasny-bootstrap.min.js"></script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap-select.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>

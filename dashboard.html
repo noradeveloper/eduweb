@@ -1,0 +1,1351 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/smartable-theme.css">
+    <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+    <link rel="stylesheet" href="./font/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="./css/bootstrap-tour.min.css">
+    <link rel="stylesheet" href="./css/flickity.css">
+    <link href="css/jasny-bootstrap.min.css" rel="stylesheet" media="screen">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-static-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle pull-left" data-toggle="offcanvas" data-target="#mobile-menu" data-canvas="body">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand hidden-xs" href="#"> <img src="./img/logos/logo.png" alt="">
+                </a>
+                <a class="navbar-brand visible-xs" href="#"><img class="logo-mobile" src="./img/logos/logo-small.png" alt="">
+                </a>
+                <div class="toggle-badge pull-right">
+                    <a type="button" class="navbar-toggle" data-toggle="collapse" data-target="#notifications" href="#"> <span class="badge badge-mobile">2</span> </a>
+                </div>
+            </div>
+            <div class="collapse navbar-collapse" id="mobile-menu">
+                <div class="user_avater hidden-xs">
+                    <a href=""> <span class="badge">2</span> </a>
+                    <a href=""> <img class="user_img img-circle" src="./img/user/avatar.png" height="48" width="48" alt=""> </a>
+                </div>
+                <div class="user_avater visible-xs">
+                    <li>
+                        <a href=""> <img class="user_img img-circle" src="./img/user/avatar.png" alt=""> </a>
+                    </li>
+                    <li> <a href="./settings.html">Settings</a> </li>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li class="active"> <a href="./dashboard.html">Dashboard</a> </li>
+                    <li> <a href="./smartcv.html">SmartCV</a> </li>
+                    <li> <a href="./careers.html">Careers</a> </li>
+                    <li> <a href="./personality.html">Personality</a> </li>
+                    <li> <a href="./faqs.html">FAQs</a> </li>
+                </ul>
+            </div>
+
+            <!-- /.navbar-collapse -->
+        </div>
+
+        <!-- /.container -->
+    </nav>
+    <!-- mobile notifications -->
+    <div class="collapse notifications" id="notifications">
+        <h2>Notifications</h2>
+        <p>We added five new missions to Smartable today! Don’t forget to check them out to earn points and level up.</p>
+        <p class="date pull-right">2 Hours Ago</p>
+        <br>
+        <hr>
+        <p>A new workshop was just announced in your area! </p>
+        <p class="date pull-right">3 Hours Ago</p>
+    </div>
+    <!-- / mobile notifications -->
+    <div class="container">
+        <!-- progress ----------------------->
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="card" id="step1">
+                    <h2>Your progress</h2>
+                    <p class="subheading">Tap on the sections to view information
+                        <br/> about your Smartable journey.
+                    </p>
+                    <div class="progress">
+                        <a href="#">
+                            <div class="progress-bar progress-bar-first" role="progressbar"> </div>
+                        </a>
+                        <a href="#">
+                            <div class="progress-bar progress-bar-second" role="progressbar"> </div>
+                        </a>
+                        <a href="#">
+                            <div class="progress-bar progress-bar-third" role="progressbar"> </div>
+                        </a>
+                        <a href="#">
+                            <div class="progress-bar progress-bar-forth" role="progressbar"> </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- feed and news ------------------>
+        <div class="row">
+            <div class="col-xs-12 col-sm-8">
+                <div class="card" id="step3">
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <h2>Your feed</h2>
+                        </div>
+                        <div class="col-xs-6">
+                            <button class="btn-secondary btn-sm visible-xs pull-right">saved articles</button>
+                            <a href="#" class="hidden-xs"><span class="fa fa-question"></span></a>
+                        </div>
+                    </div>
+                    <!-- .row -->
+                    <div id="myCarousel" class="carousel slide carousel_layout" data-ride="carousel">
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active feed-slider-box">
+                                <h3>First</h3>
+                                <button class="btn-primary btn-sm visible-xs">save</button>
+                                <p class="date">20 Nov 2016</p>
+                                <p class="carousel-pragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, d do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </p>
+                            </div>
+                            <div class="item feed-slider-box">
+                                <h3> Second</h3>
+                                <button class="btn-primary btn-sm visible-xs">save</button>
+                                <p class="date">20 Nov 2016</p>
+                                <p class="carousel-pragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, d do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </p>
+                            </div>
+                            <div class="item feed-slider-box">
+                                <h3>Third</h3>
+                                <button class="btn-primary btn-sm visible-xs">save</button>
+                                <p class="date">20 Nov 2016</p>
+                                <p class="carousel-pragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, d do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Left and right controls -->
+                        <a class="left carousel-control fa fa-angle-left fa-3x" href="#myCarousel" role="button" data-slide="prev">
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control fa fa-angle-right fa-3x" href="#myCarousel" role="button" data-slide="next">
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                    <!-- .carousel -->
+                </div>
+            </div>
+            <!--- News ------------------------------>
+            <div class="col-sm-4 hidden-xs">
+                <div class="card news">
+                    <h2>WHAT’S NEW:<br/>
+                     SMARTABLE</h2>
+                    <p>We just added a new workshop at a location near you!<a href="#"> Click here for more information</a>
+                    </p>
+                    <p>We just added 2 new missions! <a href="#">Click here to check the mission index</a>
+                    </p>
+                    <p>New badges and levels were added! <a href="#">Be sure to start new challenges to keep up your progress bar!</a>
+                    </p>
+                    <p>Got any feedback for us at Smartable? <a href="#">Let us know at help@smartable.me</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!----- Missions ---------------------------->
+        <div class="row">
+            <div class="col-md-8">
+                <div class="card" id="step4">
+                    <h2>Missions feed</h2>
+                    <form class="hidden-xs">
+                        <div class="form-group">
+                            <label for="path"> Path </label>
+                            <select class="selectpicker form-control">
+                                <option data-icon="fa fa-paint-brush fa-background" value="graphic_design">Graphic design</option>
+                                <option data-icon="fa fa-bolt fa-background" value="engineering">Electrical Engineering</option>
+                                <option data-icon="fa fa-file-code-o fa-background" value="computer">Computer Science</option>
+                                <option data-icon="fa fa-pencil-square-o fa-background" value="journalism">Journalism</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Mission Type</label>
+                            <select class="selectpicker form-control" id="mission_type_dropdown">
+                                <option value="allMissions">All Missions</option>
+                                <option data-icon="fa fa-square fa-workshop" value="workshops">Worskshops</option>
+                                <option data-icon="fa fa-square fa-general" selected value="general">General Mission</option>
+                                <option data-icon="fa fa-square fa-historyM" value="history" href="./missionhistory.html">Mission History</option>
+                                <option data-icon="fa fa-square fa-online" value="online">Online Missions</option>
+                            </select>
+                        </div>
+                        <div class="form-group pull-right">
+                            <label for="btgroup3" class="hidden-xs ">What’s this?</label>
+                        </div>
+                    </form>
+                    <!---- Mobile drop down menu ---->
+                    <form class="hidden-lg hidden-md hidden-sm visible-xs">
+                        <div class="form-group">
+                            <label for="path"> Path </label>
+                            <select class="selectpicker form-control">
+                                <option data-icon="fa fa-paint-brush fa-background" value="graphic_design">Graphic design</option>
+                                <option data-icon="fa fa-bolt fa-background" value="engineering">Electrical Engineering</option>
+                                <option data-icon="fa fa-file-code-o fa-background" value="computer">Computer Science</option>
+                                <option data-icon="fa fa-pencil-square-o fa-background" value="journalism">Journalism</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Mission Type</label>
+                            <select class="selectpicker form-control" id="mission_type_dropdown_xs">
+                                <option selected value="allMissions">All Missions</option>
+                                <option data-icon="fa fa-square fa-workshop" value="workshops">Worskshops</option>
+                                <option data-icon="fa fa-square fa-general" value="general">General Mission</option>
+                                <option data-icon="fa fa-square fa-historyM" value="history" href="./missionhistory.html">Mission History</option>
+                                <option data-icon="fa fa-square fa-online" value="online">Online Missions</option>
+                            </select>
+                        </div>
+                    </form>
+                    <!-- Mission slider, visible on mobile only ---------------------------------------------------------------->
+                    <div class="row visible-xs">
+                        <div class="col-xs-12">
+                            <!---- general missions slider ---->
+                            <section id="general_slider_content">
+                                <h5>general missions</h5>
+                                <div class="carousel" data-flickity='{ "freeScroll": true, "wrapAround": true }'>
+                                    <div class="carousel-cell general_mission mission_card">
+                                        <img src="./img/logos/logo.png" alt="card img" class="mission_img">
+                                        <div class="caption">
+                                            <p class="mission_title">Innovator Test</p>
+                                            <p class="mission_subtitle">Personality Test</p>
+                                            <p class="mission_info">Workshop to prepare you for presentations on any scale. This workshop will give you the presenting edge to succeed.</p>
+                                            <a href="#" class="btn mission_btn general_mission_carousel_btn carousel_btn" data-toggle="modal" data-target=".modal8" role="button">start</a>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-cell general_mission mission_card">
+                                        <img src="./img/logos/logo.png" alt="card img" class="mission_img">
+                                        <div class="caption">
+                                            <p class="mission_title">UX Workshop </p>
+                                            <p class="mission_subtitle">3rd March 2016</p>
+                                            <p class="mission_provider">Scout Event</p>
+                                            <p class="mission_info">Part-time, 12 week course where you will understand users’ problems through research and empathy. </p>
+                                            <a href="#" class="btn mission_btn general_mission_carousel_btn carousel_btn" data-toggle="modal" data-target=".modal9" role="button">start</a>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-cell general_mission mission_card">
+                                        <img src="./img/logos/logo.png" alt="card img" class="mission_img">
+                                        <div class="caption">
+                                            <p class="mission_title">Product Design WorkShop</p>
+                                            <p class="mission_subtitle">3rd March 2016</p>
+                                            <p class="mission_provider">Scout Event</p>
+                                            <p class="mission_info">Venmo wolf raw denim fanny pack, mumblecore echo park chartreuse art party hoodie disrupt truck retro next level. </p>
+                                            <a href="#" class="btn mission_btn general_mission_carousel_btn carousel_btn" data-toggle="modal" data-target=".modal10" role="button">start</a>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-cell general_mission mission_card">
+                                        <img src="./img/logos/logo.png" alt="card img" class="mission_img">
+                                        <div class="caption">
+                                            <p class="mission_title">Using Typography to Build a Brand </p>
+                                            <p class="mission_subtitle">3rd March 2016</p>
+                                            <p class="mission_provider">Scout Event</p>
+                                            <p class="mission_info">Steve Matteson created Cambria, Open Sans, and the Droid family, among other typefaces. </p>
+                                            <a href="#" class="btn mission_btn general_mission_carousel_btn carousel_btn" data-toggle="modal" data-target=".modal11" role="button">start</a>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-cell general_mission mission_card">
+                                        <img src="./img/logos/logo.png" alt="card img" class="mission_img">
+                                        <div class="caption">
+                                            <p class="mission_title">Presentation Skills </p>
+                                            <p class="mission_subtitle">3rd March 2016</p>
+                                            <p class="mission_provider">Northeastern University </p>
+                                            <p class="mission_info">Workshop to prepare you for presentations on any scale. This workshop will give you the presenting edge to succeed </p>
+                                            <a href="#" class="btn mission_btn general_mission_carousel_btn carousel_btn" data-toggle="modal" data-target=".modal12" role="button">start</a>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-cell general_mission mission_card">
+                                        <img src="./img/logos/logo.png" alt="card img" class="mission_img">
+                                        <div class="caption">
+                                            <p class="mission_title">Portfolio Workshop </p>
+                                            <p class="mission_subtitle">3rd March 2016</p>
+                                            <p class="mission_provider">Scout Event</p>
+                                            <p class="mission_info">Workshop to polish and build your portfolio. This workshop will teach you the skills to build a successful portfolio</p>
+                                            <a href="#" class="btn mission_btn general_mission_carousel_btn carousel_btn" data-toggle="modal" data-target=".modal13" role="button">start</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <!----  workshop slider ---->
+                            <section id="workshop_slider_content">
+                                <h5>Upcomming workshops</h5>
+                                <div class="carousel" data-flickity='{ "freeScroll": true, "wrapAround": true }'>
+                                    <div class="carousel-cell workshop mission_card">
+                                        <img src="./img/dashboard/mission feed/presentation.png" alt="card img" class="mission_img">
+                                        <div class="caption">
+                                            <p class="mission_title">Presentation Workshop</p>
+                                            <p class="mission_subtitle">3rd March 2016</p>
+                                            <p class="mission_provider">Scout Event</p>
+                                            <p class="mission_info">Workshop to prepare you for presentations on any scale. This workshop will give you the presenting edge to succeed.</p>
+                                            <a href="#" class="btn mission_btn workshop_carousel_btn carousel_btn" data-toggle="modal" data-target=".modal1" role="button">REGISTER</a>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-cell workshop mission_card">
+                                        <img src="./img/dashboard/mission feed/ux.png" alt="card img" class="mission_img">
+                                        <div class="caption">
+                                            <p class="mission_title">UX Workshop </p>
+                                            <p class="mission_subtitle">3rd March 2016</p>
+                                            <p class="mission_provider">Scout Event</p>
+                                            <p class="mission_info">Part-time, 12 week course where you will understand users’ problems through research and empathy. </p>
+                                            <a href="#" class="btn mission_btn workshop_carousel_btn carousel_btn" data-toggle="modal" data-target=".modal2" role="button">REGISTER</a>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-cell workshop mission_card">
+                                        <img src="./img/dashboard/mission feed/product design.png" alt="card img" class="mission_img">
+                                        <div class="caption">
+                                            <p class="mission_title">Product Design WorkShop</p>
+                                            <p class="mission_subtitle">3rd March 2016</p>
+                                            <p class="mission_provider">Scout Event</p>
+                                            <p class="mission_info">Venmo wolf raw denim fanny pack, mumblecore echo park chartreuse art party hoodie disrupt truck retro next level. </p>
+                                            <a href="#" class="btn mission_btn workshop_carousel_btn carousel_btn" data-toggle="modal" data-target=".modal3" role="button">REGISTER</a>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-cell workshop mission_card">
+                                        <img src="./img/dashboard/mission feed/portfolio.png" alt="card img" class="mission_img">
+                                        <div class="caption">
+                                            <p class="mission_title">Using Typography to Build a Brand </p>
+                                            <p class="mission_subtitle">3rd March 2016</p>
+                                            <p class="mission_provider">Scout Event</p>
+                                            <p class="mission_info">Steve Matteson created Cambria, Open Sans, and the Droid family, among other typefaces. </p>
+                                            <a href="#" class="btn mission_btn workshop_carousel_btn carousel_btn" data-toggle="modal" data-target=".modal3" role="button">REGISTER</a>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-cell workshop mission_card">
+                                        <img src="./img/dashboard/mission feed/presentation.png" alt="card img" class="mission_img">
+                                        <div class="caption">
+                                            <p class="mission_title">Presentation Skills </p>
+                                            <p class="mission_subtitle">3rd March 2016</p>
+                                            <p class="mission_provider">Northeastern University </p>
+                                            <p class="mission_info">Workshop to prepare you for presentations on any scale. This workshop will give you the presenting edge to succeed </p>
+                                            <a href="#" class="btn mission_btn workshop_carousel_btn carousel_btn" data-toggle="modal" data-target=".modal4" role="button">REGISTER</a>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-cell workshop mission_card">
+                                        <img src="./img/dashboard/mission feed/portfolio.png" alt="card img" class="mission_img">
+                                        <div class="caption">
+                                            <p class="mission_title">Portfolio Workshop </p>
+                                            <p class="mission_subtitle">3rd March 2016</p>
+                                            <p class="mission_provider">Scout Event</p>
+                                            <p class="mission_info">Workshop to polish and build your portfolio. This workshop will teach you the skills to build a successful portfolio</p>
+                                            <a href="#" class="btn mission_btn workshop_carousel_btn carousel_btn" data-toggle="modal" data-target=".modal5" role="button">REGISTER</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="carousel-cell workshop mission_card">
+                                        <img src="./img/dashboard/mission feed/portfolio.png" alt="card img" class="mission_img">
+                                        <div class="caption">
+                                            <p class="mission_title">Portfolio Workshop </p>
+                                            <p class="mission_subtitle">3rd March 2016</p>
+                                            <p class="mission_provider">Scout Event</p>
+                                            <p class="mission_info">Workshop to polish and build your portfolio. This workshop will teach you the skills to build a successful portfolio</p>
+                                            <a href="#" class="btn mission_btn workshop_carousel_btn carousel_btn" data-toggle="modal" data-target=".modal6" role="button">REGISTER</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <!----  online slider ---->
+                            <section id="online_slider_content">
+                                <h5>online missions</h5>
+                                <div class="carousel" data-flickity='{ "freeScroll": true, "wrapAround": true }'>
+                                    <div class="carousel-cell online_mission mission_card">
+                                        <img src="./img/dashboard/mission feed/udemy.png" alt="card img" class="mission_img">
+                                        <div class="caption">
+                                            <p class="mission_title">Design Process On Software</p>
+                                            <p class="mission_subtitle">Online Course </p>
+                                            <p class="mission_provider">Lynda.com </p>
+                                            <p class="mission_info">Online Course to help your creative process flow more efficiently in design software</p>
+                                            <a href="#" class="btn mission_btn online_carousel_btn carousel_btn" data-toggle="modal" data-target=".slider-modal1" role="button">start</a>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-cell online_mission mission_card">
+                                        <img src="./img/dashboard/mission feed/lynda.png" alt="card img" class="mission_img">
+                                        <div class="caption">
+                                            <p class="mission_title">Coding</p>
+                                            <p class="mission_subtitle">Online Course </p>
+                                            <p class="mission_provider">Lynda.com </p>
+                                            <p class="mission_info">Online Course to teach you the basics of Adobe Illustrator CC </p>
+                                            <a href="#" class="btn mission_btn online_carousel_btn carousel_btn" data-toggle="modal" data-target=".modal15" role="button">start</a>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-cell online_mission mission_card">
+                                        <img src="./img/dashboard/mission feed/lynda.png" alt="card img" class="mission_img">
+                                        <div class="caption">
+                                            <p class="mission_title">Product Design WorkShop</p>
+                                            <p class="mission_subtitle">3rd March 2016</p>
+                                            <p class="mission_provider">Scout Event</p>
+                                            <p class="mission_info">Venmo wolf raw denim fanny pack, mumblecore echo park chartreuse art party hoodie disrupt truck retro next level. </p>
+                                            <a href="#" class="btn mission_btn online_carousel_btn carousel_btn" data-toggle="modal" data-target=".modal16" role="button">start</a>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-cell online_mission mission_card">
+                                        <img src="./img/dashboard/mission feed/lynda.png" alt="card img" class="mission_img">
+                                        <div class="caption">
+                                            <p class="mission_title">Illustrator CC Introduction </p>
+                                            <p class="mission_subtitle">Online Course </p>
+                                            <p class="mission_provider">Lynda.com </p>
+                                            <p class="mission_info">Online Course to teach you the basics of Adobe Illustrator CC </p>
+                                            <a href="#" class="btn mission_btn online_carousel_btn carousel_btn" data-toggle="modal" data-target=".modal17" role="button">start</a>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-cell online_mission mission_card">
+                                        <img src="./img/dashboard/mission feed/lynda.png" alt="card img" class="mission_img">
+                                        <div class="caption">
+                                            <p class="mission_title">Product Design WorkShop</p>
+                                            <p class="mission_subtitle">3rd March 2016</p>
+                                            <p class="mission_provider">Scout Event</p>
+                                            <p class="mission_info">Venmo wolf raw denim fanny pack, mumblecore echo park chartreuse art party hoodie disrupt truck retro next level. </p>
+                                            <a href="#" class="btn mission_btn online_carousel_btn carousel_btn" data-toggle="modal" data-target=".modal18" role="button">start</a>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-cell online_mission mission_card">
+                                        <img src="./img/dashboard/mission feed/lynda.png" alt="card img" class="mission_img">
+                                        <div class="caption">
+                                            <p class="mission_title">Illustrator CC Introduction </p>
+                                            <p class="mission_subtitle">Online Course </p>
+                                            <p class="mission_provider">Lynda.com </p>
+                                            <p class="mission_info">Online Course to teach you the basics of Adobe Illustrator CC </p>
+                                            <a href="#" class="btn mission_btn online_carousel_btn carousel_btn" data-toggle="modal" data-target=".modal19" role="button">start</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <!--- online silder modals ---->
+                            <div class="modal fade slider-modal1" tabindex="-1" role="dialog" aria-labelledby="online_modal" aria-hidden="true">
+                                <div class="modal-dialog modal-md">
+                                    <div class="modal-content online_modal" align="center">
+                                        <img src="./img/dashboard/mission feed/udemy.png" class="img-responsive" alt="">
+                                        <p class="mission_title">Design Process On Software</p>
+                                        <p class="mission_subtitle">Online Course </p>
+                                        <p class="mission_provider">Lynda.com </p>
+                                        <p class="mission_info course-warning-msg">Oh no!
+                                            <br/> This course is not available for mobile. Please use a computer to access this course</p>
+                                        <button class="btn btn-md online_modal_btn" type="button" data-dismiss="modal">back</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- workshops schedule -------------------------------------------------->
+                    <div class="row hidden-xs">
+                        <div class="col-md-12" id="schedule_table">
+                            <h5>your schedule</h5>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td class="event_date">Thu Apr 7</td>
+                                        <td class="event_time">6:30pm - 8:00pm </td>
+                                        <td class="event_title">Scout Event: Typography in the 21st Century </td>
+                                        <td class="event_details"><a href="#">Event Details</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="event_date">Wed Nov 5</td>
+                                        <td class="event_time">6:30pm - 8:00pm </td>
+                                        <td class="event_title">Harvard x Design: Design Conference </td>
+                                        <td class="event_details"><a href="#">Event Details</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="event_date">Sun Sep 10</td>
+                                        <td class="event_time">6:30pm - 8:00pm </td>
+                                        <td class="event_title">CAMD: UX Workshop</td>
+                                        <td class="event_details"><a href="#">Event Details</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- Workshops Cards -------------------------------------------------------------->
+                    <section class="row hidden-xs" id="workshops_content">
+                        <hr class="hidden-xs" width="400" />
+                        <div class="col-sm-12">
+                            <h5>Upcomming workshops</h5>
+                        </div>
+                        <div class="workshop workshop_card">
+                            <img src="./img/dashboard/mission feed/presentation.png" alt="card img" class="mission_img">
+                            <div class="caption">
+                                <p class="mission_title">Presentation Workshop</p>
+                                <p class="mission_subtitle">3rd March 2016</p>
+                                <p class="mission_provider">Scout Event</p>
+                                <p class="mission_info">Workshop to prepare you for presentations on any scale. This workshop will give you the presenting edge to succeed.</p>
+                                <center>
+                                    <a href="#" class="btn mission_btn workshop_btn" data-toggle="modal" data-target=".modal1" role="button">REGISTER</a>
+                                </center>
+                            </div>
+                        </div>
+                        <div class="workshop workshop_card">
+                            <img src="./img/dashboard/mission feed/ux.png" alt="card img" class="mission_img">
+                            <div class="caption">
+                                <p class="mission_title">UX Workshop </p>
+                                <p class="mission_subtitle">3rd March 2016</p>
+                                <p class="mission_provider">Scout Event</p>
+                                <p class="mission_info">Part-time, 12 week course where you will understand users’ problems through research and empathy. </p>
+                                <center>
+                                    <a href="#" class="btn mission_btn workshop_btn" data-toggle="modal" data-target=".modal2" role="button">REGISTER</a>
+                                </center>
+                            </div>
+                        </div>
+                        <div class="workshop workshop_card">
+                            <img src="./img/dashboard/mission feed/product design.png" alt="card img" class="mission_img">
+                            <div class="caption">
+                                <p class="mission_title">Product Design WorkShop</p>
+                                <p class="mission_subtitle">3rd March 2016</p>
+                                <p class="mission_provider">Scout Event</p>
+                                <p class="mission_info">Venmo wolf raw denim fanny pack, mumblecore echo park chartreuse art party hoodie disrupt truck retro next level. </p>
+                                <center>
+                                    <a href="#" class="btn mission_btn workshop_btn" data-toggle="modal" data-target=".modal3" role="button">REGISTER</a>
+                                </center>
+                            </div>
+                        </div>
+                        <div class="workshop workshop_card">
+                            <img src="./img/dashboard/mission feed/portfolio.png" alt="card img" class="mission_img">
+                            <div class="caption">
+                                <p class="mission_title">Using Typography to Build a Brand </p>
+                                <p class="mission_subtitle">3rd March 2016</p>
+                                <p class="mission_provider">Scout Event</p>
+                                <p class="mission_info">Steve Matteson created Cambria, Open Sans, and the Droid family, among other typefaces. </p>
+                                <center>
+                                    <a href="#" class="btn mission_btn workshop_btn" data-toggle="modal" data-target=".modal4" role="button">REGISTER</a>
+                                </center>
+                            </div>
+                        </div>
+                        <div class="workshop workshop_card">
+                            <img src="./img/dashboard/mission feed/presentation.png" alt="card img" class="mission_img">
+                            <div class="caption">
+                                <p class="mission_title">Presentation Skills </p>
+                                <p class="mission_subtitle">3rd March 2016</p>
+                                <p class="mission_provider">Northeastern University </p>
+                                <p class="mission_info">Workshop to prepare you for presentations on any scale. This workshop will give you the presenting edge to succeed </p>
+                                <center>
+                                    <a href="#" class="btn mission_btn workshop_btn" data-toggle="modal" data-target=".modal5" role="button">REGISTER</a>
+                                </center>
+                            </div>
+                        </div>
+                        <div class="workshop workshop_card">
+                            <img src="./img/dashboard/mission feed/portfolio.png" alt="card img" class="mission_img">
+                            <div class="caption">
+                                <p class="mission_title">Portfolio Workshop </p>
+                                <p class="mission_subtitle">3rd March 2016</p>
+                                <p class="mission_provider">Scout Event</p>
+                                <p class="mission_info">Workshop to polish and build your portfolio. This workshop will teach you the skills to build a successful portfolio</p>
+                                <center>
+                                    <a href="#" class="btn mission_btn workshop_btn" data-toggle="modal" data-target=".modal6" role="button">REGISTER</a>
+                                </center>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- workshop modal -------------------------------------------------------------->
+                    <div class="modal fade modal1" tabindex="-1" role="dialog" aria-labelledby="workshop_modal" aria-hidden="true">
+                        <div class="modal-dialog modal-md">
+                            <div class="modal-content workshop_modal" align="center">
+                                <h4>EVENT: USING TYPOGRPHY TO BUILD A BRAND 1</h4>
+                                <img src="./img/dashboard/mission feed/steve.png" class="img-responsive" alt="">
+                                <p class="mission_modal_desc">Steve Matteson created Cambria, Open Sans, and the Droid family, among other typefaces. He's a branding expert, having worked with Google, Microsoft, and others to craft the right brand tone and style using typography. He will share how typography influences branding and ultimately changes the way you interact with and experience technology.</p>
+                                <p class="mission_modal_time">APRIL 7th 6:30PM - 7:30</p>
+                                <p class="mission_modal_footer">Follow the link to register on the event page and the event will be added to your schedule !</p>
+                                <button type="button" class="btn btn-secondary btn-md workshop_modal_cancel_btn" data-dismiss="modal">cancel</button>
+                                <button class="btn btn-md workshop_modal_btn" type="button">register</button>
+                            </div>
+                            <!-- /.modal-content -->
+                        </div>
+                        <!-- /.modal-dialog -->
+                    </div>
+                    <!-- /.modal -->
+                    <div class="modal fade modal2" tabindex="-1" role="dialog" aria-labelledby="workshop_modal" aria-hidden="true">
+                        <div class="modal-dialog modal-md">
+                            <div class="modal-content workshop_modal" align="center">
+                                <h4>EVENT: USING TYPOGRPHY TO BUILD A BRAND 2</h4>
+                                <img src="./img/dashboard/mission feed/steve.png" class="img-responsive" alt="">
+                                <p class="mission_modal_desc">Steve Matteson created Cambria, Open Sans, and the Droid family, among other typefaces. He's a branding expert, having worked with Google, Microsoft, and others to craft the right brand tone and style using typography. He will share how typography influences branding and ultimately changes the way you interact with and experience technology.</p>
+                                <p class="mission_modal_time">APRIL 7th 6:30PM - 7:30</p>
+                                <p class="mission_modal_footer">Follow the link to register on the event page and the event will be added to your schedule !</p>
+                                <button type="button" class="btn btn-secondary btn-md workshop_modal_cancel_btn" data-dismiss="modal">cancel</button>
+                                <button class="btn btn-md workshop_modal_btn" type="button">register</button>
+                            </div>
+                            <!-- /.modal-content -->
+                        </div>
+                        <!-- /.modal-dialog -->
+                    </div>
+                    <!-- /.modal -->
+                    <div class="modal fade modal3" tabindex="-1" role="dialog" aria-labelledby="workshop_modal" aria-hidden="true">
+                        <div class="modal-dialog modal-md">
+                            <div class="modal-content workshop_modal" align="center">
+                                <h4>EVENT: USING TYPOGRPHY TO BUILD A BRAND 3</h4>
+                                <img src="./img/dashboard/mission feed/steve.png" class="img-responsive" alt="">
+                                <p class="mission_modal_desc">Steve Matteson created Cambria, Open Sans, and the Droid family, among other typefaces. He's a branding expert, having worked with Google, Microsoft, and others to craft the right brand tone and style using typography. He will share how typography influences branding and ultimately changes the way you interact with and experience technology.</p>
+                                <p class="mission_modal_time">APRIL 7th 6:30PM - 7:30</p>
+                                <p class="mission_modal_footer">Follow the link to register on the event page and the event will be added to your schedule !</p>
+                                <button type="button" class="btn btn-secondary btn-md workshop_modal_cancel_btn" data-dismiss="modal">cancel</button>
+                                <button class="btn btn-md workshop_modal_btn" type="button">register</button>
+                            </div>
+                            <!-- /.modal-content -->
+                        </div>
+                        <!-- /.modal-dialog -->
+                    </div>
+                    <!-- /.modal -->
+                    <div class="modal fade modal4" tabindex="-1" role="dialog" aria-labelledby="workshop_modal" aria-hidden="true">
+                        <div class="modal-dialog modal-md">
+                            <div class="modal-content workshop_modal" align="center">
+                                <h4>EVENT: USING TYPOGRPHY TO BUILD A BRAND 4</h4>
+                                <img src="./img/dashboard/mission feed/steve.png" class="img-responsive" alt="">
+                                <p class="mission_modal_desc">Steve Matteson created Cambria, Open Sans, and the Droid family, among other typefaces. He's a branding expert, having worked with Google, Microsoft, and others to craft the right brand tone and style using typography. He will share how typography influences branding and ultimately changes the way you interact with and experience technology.</p>
+                                <p class="mission_modal_time">APRIL 7th 6:30PM - 7:30</p>
+                                <p class="mission_modal_footer">Follow the link to register on the event page and the event will be added to your schedule !</p>
+                                <button type="button" class="btn btn-secondary btn-md workshop_modal_cancel_btn" data-dismiss="modal">cancel</button>
+                                <button class="btn btn-md workshop_modal_btn" type="button">register</button>
+                            </div>
+                            <!-- /.modal-content -->
+                        </div>
+                        <!-- /.modal-dialog -->
+                    </div>
+                    <!-- /.modal -->
+                    <div class="modal fade modal5" tabindex="-1" role="dialog" aria-labelledby="workshop_modal" aria-hidden="true">
+                        <div class="modal-dialog modal-md">
+                            <div class="modal-content workshop_modal" align="center">
+                                <h4>EVENT: USING TYPOGRPHY TO BUILD A BRAND 5</h4>
+                                <img src="./img/dashboard/mission feed/steve.png" class="img-responsive" alt="">
+                                <p class="mission_modal_desc">Steve Matteson created Cambria, Open Sans, and the Droid family, among other typefaces. He's a branding expert, having worked with Google, Microsoft, and others to craft the right brand tone and style using typography. He will share how typography influences branding and ultimately changes the way you interact with and experience technology.</p>
+                                <p class="mission_modal_time">APRIL 7th 6:30PM - 7:30</p>
+                                <p class="mission_modal_footer">Follow the link to register on the event page and the event will be added to your schedule !</p>
+                                <button type="button" class="btn btn-secondary btn-md workshop_modal_cancel_btn" data-dismiss="modal">cancel</button>
+                                <button class="btn btn-md workshop_modal_btn" type="button">register</button>
+                            </div>
+                            <!-- /.modal-content -->
+                        </div>
+                        <!-- /.modal-dialog -->
+                    </div>
+                    <!-- /.modal -->
+                    <div class="modal fade modal6" tabindex="-1" role="dialog" aria-labelledby="workshop_modal" aria-hidden="true">
+                        <div class="modal-dialog modal-md">
+                            <div class="modal-content workshop_modal" align="center">
+                                <h4>EVENT: USING TYPOGRPHY TO BUILD A BRAND 6</h4>
+                                <img src="./img/dashboard/mission feed/steve.png" class="img-responsive" alt="">
+                                <p class="mission_modal_desc">Steve Matteson created Cambria, Open Sans, and the Droid family, among other typefaces. He's a branding expert, having worked with Google, Microsoft, and others to craft the right brand tone and style using typography. He will share how typography influences branding and ultimately changes the way you interact with and experience technology.</p>
+                                <p class="mission_modal_time">APRIL 7th 6:30PM - 7:30</p>
+                                <p class="mission_modal_footer">Follow the link to register on the event page and the event will be added to your schedule !</p>
+                                <button type="button" class="btn btn-secondary btn-md workshop_modal_cancel_btn" data-dismiss="modal">cancel</button>
+                                <button class="btn btn-md workshop_modal_btn" type="button">register</button>
+                            </div>
+                            <!-- /.modal-content -->
+                        </div>
+                        <!-- /.modal-dialog -->
+                    </div>
+                    <!-- /.modal -->
+                    <!-- row end -->
+                    <!-- General Missions Cards -------------------------------------------------------------->
+                    <section class="row hidden-xs" id="general_content">
+                        <hr class="hidden-xs hr_line" width="400" />
+                        <div class="col-sm-12 general_mission_intro">
+                            <p>Welcome to general missions! Here you can find out more about yourself by taking self assessments and tests that will show show you what kind of personality traits you posses to best suit your career path.</p>
+                            <p>To find out more about your personality and test results, navigate your personality page !</p>
+                            <p>Start by clicking on a mission below !</p>
+                        </div>
+                        <div class="col-sm-12">
+                            <h5>General Missions</h5>
+                        </div>
+                        <div class="general_mission general_mission_card">
+                            <img src="./img/logos/logo.png" alt="card img" class="mission_img">
+                            <div class="caption">
+                                <p class="mission_title">Innovator Test</p>
+                                <p class="mission_subtitle">Personality Test</p>
+                                <p class="mission_info">Workshop to prepare you for presentations on any scale. This workshop will give you the presenting edge to succeed.</p>
+                                <div class="btn_wrapper"><a href="#" class="btn mission_btn general_mission_btn" data-toggle="modal" data-target=".modal8" role="button">start</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="general_mission general_mission_card">
+                            <img src="./img/logos/logo.png" alt="card img" class="mission_img">
+                            <div class="caption">
+                                <p class="mission_title">Critical Thinking Test</p>
+                                <p class="mission_subtitle">Personality Test </p>
+                                <p class="mission_info">Test Your critical thinking skills with this personality test!</p>
+                                <div class="btn_wrapper"><a href="#" class="btn mission_btn general_mission_btn" data-toggle="modal" data-target=".modal9" role="button">start</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="general_mission general_mission_card">
+                            <img src="./img/logos/logo.png" alt="card img" class="mission_img">
+                            <div class="caption">
+                                <p class="mission_title">College Assessment</p>
+                                <p class="mission_subtitle">General Mission</p>
+                                <p class="mission_info">Workshop to prepare you for presentations on any scale. This workshop will give you the presenting edge to succeed.</p>
+                                <div class="text-center"><a href="#" class="btn mission_btn general_mission_btn" data-toggle="modal" data-target=".modal10" role="button">start</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="general_mission general_mission_card">
+                            <img src="./img/logos/logo.png" alt="card img" class="mission_img">
+                            <div class="caption">
+                                <p class="mission_title">Work Place Assesment</p>
+                                <p class="mission_subtitle">General Mission</p>
+                                <p class="mission_info">Workshop to prepare you for presentations on any scale. This workshop will give you the presenting edge to succeed.</p>
+                                <div class="text-center"><a href="#" class="btn mission_btn general_mission_btn" data-toggle="modal" data-target=".modal11" role="button">start</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="general_mission general_mission_card">
+                            <img src="./img/logos/logo.png" alt="card img" class="mission_img">
+                            <div class="caption">
+                                <p class="mission_title">Personality Test</p>
+                                <p class="mission_subtitle">General Mission</p>
+                                <p class="mission_info">Workshop to prepare you for presentations on any scale. This workshop will give you the presenting edge to succeed.</p>
+                                <div class="text-center"><a href="#" class="btn mission_btn general_mission_btn" data-toggle="modal" data-target=".modal12" role="button">start</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="general_mission general_mission_card">
+                            <img src="./img/logos/logo.png" alt="card img" class="mission_img">
+                            <div class="caption">
+                                <p class="mission_title">Personality Test</p>
+                                <p class="mission_subtitle">General Mission</p>
+                                <p class="mission_info">Workshop to prepare you for presentations on any scale. This workshop will give you the presenting edge to succeed.</p>
+                                <div class="text-center"><a href="#" class="btn mission_btn general_mission_btn" data-toggle="modal" data-target=".modal13" role="button">start</a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- row end -->
+                    <!--  General Mission Modals -------------------------------------------------------------->
+                    <div class="modal fade modal8" tabindex="-1" role="dialog" aria-labelledby="gmission_modal" aria-hidden="true">
+                        <div class="modal-dialog modal-md">
+                            <div class="modal-content gmission_modal" align="center">
+                                <img src="./img/logos/logo.png" class="img-responsive" alt="">
+                                <h4>Innovator Test</h4>
+                                <p class="mission_modal_desc">Do you have what it takes to be an innovator?
+                                    <br/>This 15-20 minute test will test your innovation attributes
+                                </p>
+                                <p class="mission_modal_footer">Follow the link to start your mission</p>
+                                <button type="button" class="btn btn-secondary btn-md" data-dismiss="modal">cancel</button>
+                                <button class="btn btn-md gmission_modal_btn" type="button">start</button>
+                            </div>
+                            <!-- /.modal-content -->
+                        </div>
+                        <!-- /.modal-dialog -->
+                    </div>
+                    <!-- /.modal -->
+                    <div class="modal fade modal9" tabindex="-1" role="dialog" aria-labelledby="gmission_modal" aria-hidden="true">
+                        <div class="modal-dialog modal-md">
+                            <div class="modal-content gmission_modal" align="center">
+                                <img src="./img/logos/logo.png" class="img-responsive" alt="">
+                                <h4>Innovator Test</h4>
+                                <p class="mission_modal_desc">Do you have what it takes to be an innovator?
+                                    <br/>This 15-20 minute test will test your innovation attributes
+                                </p>
+                                <p class="mission_modal_footer">Follow the link to start your mission</p>
+                                <button type="button" class="btn btn-secondary btn-md" data-dismiss="modal">cancel</button>
+                                <button class="btn btn-md gmission_modal_btn" type="button">start</button>
+                            </div>
+                            <!-- /.modal-content -->
+                        </div>
+                        <!-- /.modal-dialog -->
+                    </div>
+                    <!-- /.modal -->
+                    <div class="modal fade modal10" tabindex="-1" role="dialog" aria-labelledby="gmission_modal" aria-hidden="true">
+                        <div class="modal-dialog modal-md">
+                            <div class="modal-content gmission_modal" align="center">
+                                <img src="./img/logos/logo.png" class="img-responsive" alt="">
+                                <h4>Innovator Test</h4>
+                                <p class="mission_modal_desc">Do you have what it takes to be an innovator?
+                                    <br/>This 15-20 minute test will test your innovation attributes
+                                </p>
+                                <p class="mission_modal_footer">Follow the link to start your mission</p>
+                                <button type="button" class="btn btn-secondary btn-md" data-dismiss="modal">cancel</button>
+                                <button class="btn btn-md gmission_modal_btn" type="button">start</button>
+                            </div>
+                            <!-- /.modal-content -->
+                        </div>
+                        <!-- /.modal-dialog -->
+                    </div>
+                    <!-- /.modal -->
+                    <div class="modal fade modal11" tabindex="-1" role="dialog" aria-labelledby="gmission_modal" aria-hidden="true">
+                        <div class="modal-dialog modal-md">
+                            <div class="modal-content gmission_modal" align="center">
+                                <img src="./img/logos/logo.png" class="img-responsive" alt="">
+                                <h4>Innovator Test</h4>
+                                <p class="mission_modal_desc">Do you have what it takes to be an innovator?
+                                    <br/>This 15-20 minute test will test your innovation attributes
+                                </p>
+                                <p class="mission_modal_footer">Follow the link to start your mission</p>
+                                <button type="button" class="btn btn-secondary btn-md" data-dismiss="modal">cancel</button>
+                                <button class="btn btn-md gmission_modal_btn" type="button">start</button>
+                            </div>
+                            <!-- /.modal-content -->
+                        </div>
+                        <!-- /.modal-dialog -->
+                    </div>
+                    <!-- /.modal -->
+                    <div class="modal fade modal12" tabindex="-1" role="dialog" aria-labelledby="gmission_modal" aria-hidden="true">
+                        <div class="modal-dialog modal-md">
+                            <div class="modal-content gmission_modal" align="center">
+                                <img src="./img/logos/logo.png" class="img-responsive" alt="">
+                                <h4>Innovator Test</h4>
+                                <p class="mission_modal_desc">Do you have what it takes to be an innovator?
+                                    <br/>This 15-20 minute test will test your innovation attributes
+                                </p>
+                                <p class="mission_modal_footer">Follow the link to start your mission</p>
+                                <button type="button" class="btn btn-secondary btn-md" data-dismiss="modal">cancel</button>
+                                <button class="btn btn-md gmission_modal_btn" type="button">start</button>
+                            </div>
+                            <!-- /.modal-content -->
+                        </div>
+                        <!-- /.modal-dialog -->
+                    </div>
+                    <!-- /.modal -->
+                    <div class="modal fade modal13" tabindex="-1" role="dialog" aria-labelledby="gmission_modal" aria-hidden="true">
+                        <div class="modal-dialog modal-md">
+                            <div class="modal-content gmission_modal" align="center">
+                                <img src="./img/logos/logo.png" class="img-responsive" alt="">
+                                <h4>Innovator Test</h4>
+                                <p class="mission_modal_desc">Do you have what it takes to be an innovator?
+                                    <br/>This 15-20 minute test will test your innovation attributes
+                                </p>
+                                <p class="mission_modal_footer">Follow the link to start your mission</p>
+                                <button type="button" class="btn btn-secondary btn-md" data-dismiss="modal">cancel</button>
+                                <button class="btn btn-md gmission_modal_btn" type="button">start</button>
+                            </div>
+                            <!-- /.modal-content -->
+                        </div>
+                        <!-- /.modal-dialog -->
+                    </div>
+                    <!-- /.modal -->
+                    <!-- Online Cards -------------------------------------------------------------->
+                    <section class="row hidden-xs" id="online_content">
+                        <hr class="hidden-xs hr_line" width="400" />
+                        <!-- last mission card ---->
+                        <p id="last_mission_label">Last Mission</p>
+                        <div class="online_mission last_mission_card" align="center">
+                            <img src="./img/dashboard/mission feed/lynda.png" alt="card img" class="mission_img">
+                            <div class="caption">
+                                <p class="mission_title">Photoshop CC Introduction</p>
+                                <p class="mission_subtitle">Online Course </p>
+                                <p class="mission_provider">Lynda.com </p>
+                                <p class="mission_info">Lynda’s online course to teach you the basics of Adobe Photoshop CC
+                                    <br/>Continue your progress by following the link bellow </p>
+                                <a href="#" class="btn mission_btn last_mission_btn" data-toggle="modal" data-target=".last-mission-modal" role="button">continue</a>
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <h5>Online Missions</h5>
+                            <!-- online mission tab -------------------------------------------------------------->
+                            <ul class="nav nav-pills">
+                                <li class="active"><a data-toggle="pill" href="#software">Design Software</a>
+                                </li>
+                                <li><a data-toggle="pill" href="#coding">Coding Missions</a>
+                                </li>
+                                <li><a data-toggle="pill" href="#lecture">Art and Design Lectures</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-content">
+                            <!-- software design content --->
+                            <section role="tabpanel" class="tab-pane active" id="software">
+                                <div class="online_mission mission_card">
+                                    <img src="./img/dashboard/mission feed/udemy.png" alt="card img" class="mission_img">
+                                    <div class="caption">
+                                        <p class="mission_title">Design Process On Software</p>
+                                        <p class="mission_subtitle">Online Course </p>
+                                        <p class="mission_provider">Lynda.com </p>
+                                        <p class="mission_info">Online Course to help your creative process flow more efficiently in design software</p>
+                                        <a href="#" class="btn mission_btn online_mission_btn" data-toggle="modal" data-target=".modal14" role="button">start</a>
+                                    </div>
+                                </div>
+                                <div class="online_mission mission_card">
+                                    <img src="./img/dashboard/mission feed/lynda.png" alt="card img" class="mission_img">
+                                    <div class="caption">
+                                        <p class="mission_title">Illustrator CC Introduction </p>
+                                        <p class="mission_subtitle">Online Course </p>
+                                        <p class="mission_provider">Lynda.com </p>
+                                        <p class="mission_info">Online Course to teach you the basics of Adobe Illustrator CC </p>
+                                        <a href="#" class="btn mission_btn online_mission_btn" data-toggle="modal" data-target=".modal15" role="button">start</a>
+                                    </div>
+                                </div>
+                                <div class="online_mission mission_card">
+                                    <img src="./img/dashboard/mission feed/lynda.png" alt="card img" class="mission_img">
+                                    <div class="caption">
+                                        <p class="mission_title">Illustrator CC Introduction </p>
+                                        <p class="mission_subtitle">Online Course </p>
+                                        <p class="mission_provider">Lynda.com </p>
+                                        <p class="mission_info">Online Course to teach you the basics of Adobe Illustrator CC </p>
+                                        <a href="#" class="btn mission_btn online_mission_btn" data-toggle="modal" data-target=".modal16" role="button">start</a>
+                                    </div>
+                                </div>
+                                <div class="online_mission mission_card">
+                                    <img src="./img/dashboard/mission feed/lynda.png" alt="card img" class="mission_img">
+                                    <div class="caption">
+                                        <p class="mission_title">Illustrator CC Introduction </p>
+                                        <p class="mission_subtitle">Online Course </p>
+                                        <p class="mission_provider">Lynda.com </p>
+                                        <p class="mission_info">Online Course to teach you the basics of Adobe Illustrator CC </p>
+                                        <a href="#" class="btn mission_btn online_mission_btn" data-toggle="modal" data-target=".modal17" role="button">start</a>
+                                    </div>
+                                </div>
+                                <div class="online_mission mission_card">
+                                    <img src="./img/dashboard/mission feed/lynda.png" alt="card img" class="mission_img">
+                                    <div class="caption">
+                                        <p class="mission_title">Illustrator CC Introduction </p>
+                                        <p class="mission_subtitle">Online Course </p>
+                                        <p class="mission_provider">Lynda.com </p>
+                                        <p class="mission_info">Online Course to teach you the basics of Adobe Illustrator CC </p>
+                                        <a href="#" class="btn mission_btn online_mission_btn" data-toggle="modal" data-target=".modal18" role="button">start</a>
+                                    </div>
+                                </div>
+                                <div class="online_mission mission_card">
+                                    <img src="./img/dashboard/mission feed/lynda.png" alt="card img" class="mission_img">
+                                    <div class="caption">
+                                        <p class="mission_title">Illustrator CC Introduction </p>
+                                        <p class="mission_subtitle">Online Course </p>
+                                        <p class="mission_provider">Lynda.com </p>
+                                        <p class="mission_info">Online Course to teach you the basics of Adobe Illustrator CC </p>
+                                        <a href="#" class="btn mission_btn online_mission_btn" data-toggle="modal" data-target=".modal19" role="button">start</a>
+                                    </div>
+                                </div>
+                            </section>
+                            <!-- coding missions content --->
+                            <section role="tabpanel" class="tab-pane" id="coding">
+                                <div class="online_mission mission_card">
+                                    <img src="./img/dashboard/mission feed/lynda.png" alt="card img" class="mission_img">
+                                    <div class="caption">
+                                        <p class="mission_title">Coding</p>
+                                        <p class="mission_subtitle">Online Course </p>
+                                        <p class="mission_provider">Lynda.com </p>
+                                        <p class="mission_info">Online Course to teach you the basics of Adobe Illustrator CC </p>
+                                        <a href="#" class="btn mission_btn online_mission_btn" data-toggle="modal" data-target=".modal20" role="button">start</a>
+                                    </div>
+                                </div>
+                                <div class="online_mission mission_card">
+                                    <img src="./img/dashboard/mission feed/lynda.png" alt="card img" class="mission_img">
+                                    <div class="caption">
+                                        <p class="mission_title">Coding</p>
+                                        <p class="mission_subtitle">Online Course </p>
+                                        <p class="mission_provider">Lynda.com </p>
+                                        <p class="mission_info">Online Course to teach you the basics of Adobe Illustrator CC </p>
+                                        <a href="#" class="btn mission_btn online_mission_btn" data-toggle="modal" data-target=".modal21" role="button">start</a>
+                                    </div>
+                                </div>
+                                <div class="online_mission mission_card">
+                                    <img src="./img/dashboard/mission feed/lynda.png" alt="card img" class="mission_img">
+                                    <div class="caption">
+                                        <p class="mission_title">Coding</p>
+                                        <p class="mission_subtitle">Online Course </p>
+                                        <p class="mission_provider">Lynda.com </p>
+                                        <p class="mission_info">Online Course to teach you the basics of Adobe Illustrator CC </p>
+                                        <a href="#" class="btn mission_btn online_mission_btn" data-toggle="modal" data-target=".modal22" role="button">start</a>
+                                    </div>
+                                </div>
+                            </section>
+                            <!-- Art and Design Lectures content --->
+                            <section role="tabpanel" class="tab-pane" id="lecture">
+                                <div class="online_mission mission_card">
+                                    <img src="./img/dashboard/mission feed/lynda.png" alt="card img" class="mission_img">
+                                    <div class="caption">
+                                        <p class="mission_title">lecture</p>
+                                        <p class="mission_subtitle">Online Course </p>
+                                        <p class="mission_provider">Lynda.com </p>
+                                        <p class="mission_info">Online Course to teach you the basics of Adobe Illustrator CC </p>
+                                        <a href="#" class="btn mission_btn online_mission_btn" data-toggle="modal" data-target=".modal23" role="button">start</a>
+                                    </div>
+                                </div>
+                                <div class="online_mission mission_card">
+                                    <img src="./img/dashboard/mission feed/lynda.png" alt="card img" class="mission_img">
+                                    <div class="caption">
+                                        <p class="mission_title">lecture</p>
+                                        <p class="mission_subtitle">Online Course </p>
+                                        <p class="mission_provider">Lynda.com </p>
+                                        <p class="mission_info">Online Course to teach you the basics of Adobe Illustrator CC </p>
+                                        <a href="#" class="btn mission_btn online_mission_btn" data-toggle="modal" data-target=".modal24" role="button">start</a>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <!--/.tab-content-->
+                    </section>
+                    <!--/.row - online mission section -->
+                    <!---- online missions modals ---->
+                    <div class="modal fade last-mission-modal" tabindex="-1" role="dialog" aria-labelledby="online_modal" aria-hidden="true">
+                        <div class="modal-dialog modal-md">
+                            <div class="modal-content online_modal" align="center">
+                                <img src="./img/dashboard/mission feed/lynda.png" class="img-responsive" alt="">
+                                <h4>Adobe Photoshop CC Intoduction Lynda Course </h4>
+                                <p class="mission_subtitle">Introduction course to teach you the basics of adobe photoshops’s photoshop CC</p>
+                                <p class="mission_modal_code">B12345678</p>
+                                <p class="mission_modal_footer">Follow the link to continue your mission at lynda.com</p>
+                                <button type="button" class="btn btn-secondary btn-md" data-dismiss="modal">cancel</button>
+                                <button class="btn btn-md online_modal_btn" type="button">resume</button>
+                            </div>
+                            <!-- /.modal-content -->
+                        </div>
+                        <!-- /.modal-dialog -->
+                    </div>
+                    <!-- /.modal -->
+                    <div class="modal fade modal14" tabindex="-1" role="dialog" aria-labelledby="online_modal" aria-hidden="true">
+                        <div class="modal-dialog modal-md">
+                            <div class="modal-content online_modal" align="center">
+                                <img src="./img/udemy.png" class="img-responsive" alt="">
+                                <p class="mission_title">Illustrator CC Introduction </p>
+                                <p class="mission_subtitle">Online Course </p>
+                                <p class="mission_provider">Lynda.com </p>
+                                <p class="mission_info">Online Course to teach you the basics of Adobe Illustrator CC </p>
+                                <button class="btn btn-md online_modal_btn" type="button">start</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade modal15" tabindex="-1" role="dialog" aria-labelledby="online_modal" aria-hidden="true">
+                        <div class="modal-dialog modal-md">
+                            <div class="modal-content online_modal" align="center">
+                                <img src="./img/dashboard/mission feed/lynda.png" class="img-responsive" alt="">
+                                <p class="mission_title">Illustrator CC Introduction </p>
+                                <p class="mission_subtitle">Online Course </p>
+                                <p class="mission_provider">Lynda.com </p>
+                                <p class="mission_info">Online Course to teach you the basics of Adobe Illustrator CC </p>
+                                <button class="btn btn-md online_modal_btn" type="button">start</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade modal16" tabindex="-1" role="dialog" aria-labelledby="online_modal" aria-hidden="true">
+                        <div class="modal-dialog modal-md">
+                            <div class="modal-content online_modal" align="center">
+                                <img src="./img/dashboard/mission feed/lynda.png" class="img-responsive" alt="">
+                                <p class="mission_title">Illustrator CC Introduction </p>
+                                <p class="mission_subtitle">Online Course </p>
+                                <p class="mission_provider">Lynda.com </p>
+                                <p class="mission_info">Online Course to teach you the basics of Adobe Illustrator CC </p>
+                                <button class="btn btn-md online_modal_btn" type="button">start</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade modal17" tabindex="-1" role="dialog" aria-labelledby="online_modal" aria-hidden="true">
+                        <div class="modal-dialog modal-md">
+                            <div class="modal-content online_modal" align="center">
+                                <img src="./img/dashboard/mission feed/lynda.png" class="img-responsive" alt="">
+                                <p class="mission_title">Illustrator CC Introduction </p>
+                                <p class="mission_subtitle">Online Course </p>
+                                <p class="mission_provider">Lynda.com </p>
+                                <p class="mission_info">Online Course to teach you the basics of Adobe Illustrator CC </p>
+                                <button class="btn btn-md online_modal_btn" type="button">start</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade modal18" tabindex="-1" role="dialog" aria-labelledby="online_modal" aria-hidden="true">
+                        <div class="modal-dialog modal-md">
+                            <div class="modal-content online_modal" align="center">
+                                <img src="./img/dashboard/mission feed/lynda.png" class="img-responsive" alt="">
+                                <p class="mission_title">Illustrator CC Introduction </p>
+                                <p class="mission_subtitle">Online Course </p>
+                                <p class="mission_provider">Lynda.com </p>
+                                <p class="mission_info">Online Course to teach you the basics of Adobe Illustrator CC </p>
+                                <button class="btn btn-md online_modal_btn" type="button">start</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade modal19" tabindex="-1" role="dialog" aria-labelledby="online_modal" aria-hidden="true">
+                        <div class="modal-dialog modal-md">
+                            <div class="modal-content online_modal" align="center">
+                                <img src="./img/dashboard/mission feed/lynda.png" class="img-responsive" alt="">
+                                <p class="mission_title">Illustrator CC Introduction </p>
+                                <p class="mission_subtitle">Online Course </p>
+                                <p class="mission_provider">Lynda.com </p>
+                                <p class="mission_info">Online Course to teach you the basics of Adobe Illustrator CC </p>
+                                <button class="btn btn-md online_modal_btn" type="button">start</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade modal20" tabindex="-1" role="dialog" aria-labelledby="online_modal" aria-hidden="true">
+                        <div class="modal-dialog modal-md">
+                            <div class="modal-content online_modal" align="center">
+                                <img src="./img/dashboard/mission feed/lynda.png" class="img-responsive" alt="">
+                                <p class="mission_title">Illustrator CC Introduction </p>
+                                <p class="mission_subtitle">Online Course </p>
+                                <p class="mission_provider">Lynda.com </p>
+                                <p class="mission_info">Online Course to teach you the basics of Adobe Illustrator CC </p>
+                                <button class="btn btn-md online_modal_btn" type="button">start</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade modal21" tabindex="-1" role="dialog" aria-labelledby="online_modal" aria-hidden="true">
+                        <div class="modal-dialog modal-md">
+                            <div class="modal-content online_modal" align="center">
+                                <img src="./img/dashboard/mission feed/lynda.png" class="img-responsive" alt="">
+                                <p class="mission_title">Illustrator CC Introduction </p>
+                                <p class="mission_subtitle">Online Course </p>
+                                <p class="mission_provider">Lynda.com </p>
+                                <p class="mission_info">Online Course to teach you the basics of Adobe Illustrator CC </p>
+                                <button class="btn btn-md online_modal_btn" type="button">start</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade modal22" tabindex="-1" role="dialog" aria-labelledby="online_modal" aria-hidden="true">
+                        <div class="modal-dialog modal-md">
+                            <div class="modal-content online_modal" align="center">
+                                <img src="./img/dashboard/mission feed/lynda.png" class="img-responsive" alt="">
+                                <p class="mission_title">Illustrator CC Introduction </p>
+                                <p class="mission_subtitle">Online Course </p>
+                                <p class="mission_provider">Lynda.com </p>
+                                <p class="mission_info">Online Course to teach you the basics of Adobe Illustrator CC </p>
+                                <button class="btn btn-md online_modal_btn" type="button">start</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade modal23" tabindex="-1" role="dialog" aria-labelledby="online_modal" aria-hidden="true">
+                        <div class="modal-dialog modal-md">
+                            <div class="modal-content online_modal" align="center">
+                                <img src="./img/dashboard/mission feed/lynda.png" class="img-responsive" alt="">
+                                <p class="mission_title">Illustrator CC Introduction </p>
+                                <p class="mission_subtitle">Online Course </p>
+                                <p class="mission_provider">Lynda.com </p>
+                                <p class="mission_info">Online Course to teach you the basics of Adobe Illustrator CC </p>
+                                <button class="btn btn-md online_modal_btn" type="button">start</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade modal24" tabindex="-1" role="dialog" aria-labelledby="online_modal" aria-hidden="true">
+                        <div class="modal-dialog modal-md">
+                            <div class="modal-content online_modal" align="center">
+                                <img src="./img/dashboard/mission feed/lynda.png" class="img-responsive" alt="">
+                                <p class="mission_title">Illustrator CC Introduction </p>
+                                <p class="mission_subtitle">Online Course </p>
+                                <p class="mission_provider">Lynda.com </p>
+                                <p class="mission_info">Online Course to teach you the basics of Adobe Illustrator CC </p>
+                                <button class="btn btn-md online_modal_btn" type="button">start</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--- user profile -------------------------------------------------------------->
+            <div class="col-md-4">
+                <div class="row hidden-xs hidden-sm">
+                    <div class="col-xs-12 ">
+                        <div class="card_v2" id="step5">
+                            <div class="user_bg_container"><img src="./img/user/background.jpg" alt="background" class="img-responsive">
+                            </div>
+                            <div class="user_profile">
+                                <h4 class="user_name">User Name</h4>
+                                <img src="./img/user/avatar.png" class="img-responsive img-circle avatar" alt="" />
+                                <p class="user_location">Jeddah, Saudi Arabia</p>
+                                <hr width="250" class="userprofile-hr" />
+                                <div class="row data">
+                                    <div class="col-md-3">
+                                        <p class="user_data">2</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <p class="user_data">10</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <p class="user_data">3</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <p class="user_data">8</p>
+                                    </div>
+                                </div>
+                                <div class="row data">
+                                    <div class="col-md-3">
+                                        <p class="data_title">level</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <p class="data_title">missions completed</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <p class="data_title">workshops</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <p class="data_title">bages</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- .card -->
+                        </div>
+                    </div>
+                </div>
+                <!-- .row -->
+                <!-- career -------------------------------------------------------------->
+                <div class="card" id="step2">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <h2>Your career</h2>
+                            <p>Tap on the cards to follow or unfollow careers. You will receive updates and missions related to careers you follow.
+                            </p>
+                            <h5> Careers you follow</h5>
+                            <div class="row">
+                                <div class="col-xs-6 col-sm-4">
+                                    <!--Card 1-->
+                                    <div class="container-img">
+                                        <img class="img-responsive" src="./img/dashboard/career/photographer.png" alt="card img">
+                                        <p class="title-img">photographer</p>
+                                        <div class="overlay"></div>
+                                        <div class="button">
+                                            <button class="btn-danger">Unfollow</button>
+                                        </div>
+                                    </div>
+                                    <!--/.Card-->
+                                </div>
+                                <div class="col-xs-6 col-sm-4">
+                                    <!--Card 2-->
+                                    <div class="container-img">
+                                        <img class="img-responsive" src="./img/dashboard/career/botanist.png" alt="card img">
+                                        <p class="title-img">botanist</p>
+                                        <div class="overlay"></div>
+                                        <div class="button">
+                                            <button class="btn-danger">Unfollow</button>
+                                        </div>
+                                    </div>
+                                    <!--/.Card-->
+                                </div>
+                                <div class="col-xs-6 col-sm-4">
+                                    <!--Card 3-->
+                                    <div class="container-img">
+                                        <img class="img-responsive" src="./img/dashboard/career/sculptor.png" alt="card img">
+                                        <p class="title-img">sculptor</p>
+                                        <div class="overlay"></div>
+                                        <div class="button">
+                                            <button class="btn-danger">Unfollow</button>
+                                        </div>
+                                    </div>
+                                    <!--/.Card-->
+                                </div>
+                                <!--row Cards-->
+                                <div class="col-xs-6 col-sm-4">
+                                    <!--Card 4-->
+                                    <div class="container-img">
+                                        <img class="img-responsive" src="./img/dashboard/career/advertising1.png" alt="card img">
+                                        <p class="title-img">advertising</p>
+                                        <div class="overlay"></div>
+                                        <div class="button">
+                                            <button class="btn-danger">Unfollow</button>
+                                        </div>
+                                    </div>
+                                    <!--/.Card-->
+                                </div>
+                            </div>
+                            <!-- /.row -->
+                            <!-- /.row -->
+                            <div class="collapse" id="collapse2">
+                                <div class="row">
+                                    <h5> Recommended for you</h5>
+                                    <div class="col-xs-6 col-sm-4">
+                                        <!--Card 1-->
+                                        <div class="container-img">
+                                            <img class="img-responsive" src="./img/dashboard/career/national parks.png" alt="card img">
+                                            <p class="title-img">national parks</p>
+                                            <div class="overlay"></div>
+                                            <div class="button">
+                                                <button class="btn-success">follow</button>
+                                            </div>
+                                        </div>
+                                        <!--/.Card-->
+                                    </div>
+                                    <div class="col-xs-6 col-sm-4">
+                                        <!--Card 2-->
+                                        <div class="container-img">
+                                            <img class="img-responsive" src="./img/dashboard/career/anthropologist.png" alt="card img">
+                                            <p class="title-img">anthropologist</p>
+                                            <div class="overlay"></div>
+                                            <div class="button">
+                                                <button class="btn-success">follow</button>
+                                            </div>
+                                        </div>
+                                        <!--/.Card-->
+                                    </div>
+                                    <div class="col-xs-6 col-sm-4">
+                                        <!--Card 3-->
+                                        <div class="container-img">
+                                            <img class="img-responsive" src="./img/dashboard/career/advertising1.png" alt="card img">
+                                            <p class="title-img">advertising</p>
+                                            <div class="overlay"></div>
+                                            <div class="button">
+                                                <button class="btn-success">follow</button>
+                                            </div>
+                                            <!--/.Card-->
+                                        </div>
+                                    </div>
+                                    <!--row Cards-->
+                                    <div class="col-xs-6 col-sm-4">
+                                        <!--Card 4-->
+                                        <div class="container-img">
+                                            <img class="img-responsive" src="./img/dashboard/career/botanist.png" alt="card img">
+                                            <p class="title-img">photographer</p>
+                                            <div class="overlay"></div>
+                                            <div class="button">
+                                                <button class="btn-success">follow</button>
+                                            </div>
+                                        </div>
+                                        <!--/.Card-->
+                                    </div>
+                                    <div class="col-xs-6 col-sm-4">
+                                        <!--Card 4-->
+                                        <div class="container-img">
+                                            <img class="img-responsive" src="./img/dashboard/career/sculptor.png" alt="card img">
+                                            <p class="title-img">photographer</p>
+                                            <div class="overlay"></div>
+                                            <div class="button">
+                                                <button class="btn-success">follow</button>
+                                            </div>
+                                        </div>
+                                        <!--/.Card-->
+                                    </div>
+                                    <div class="col-xs-6 col-sm-4">
+                                        <!--Card 4-->
+                                        <div class="container-img">
+                                            <img class="img-responsive" src="./img/dashboard/career/photographer.png" alt="card img">
+                                            <p class="title-img">photographer</p>
+                                            <div class="overlay"></div>
+                                            <div class="button">
+                                                <button class="btn-success">follow</button>
+                                            </div>
+                                        </div>
+                                        <!--/.Card-->
+                                    </div>
+                                </div>
+                                <!-- /.row -->
+                            </div>
+                            <!-- /.collapse -->
+                            <!-- see all career button in mobile view -------------------------------------------------------------->
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <br/>
+                                    <center>
+                                        <button class="btn-primary btn-sm visible-xs" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="false">See all careers</button>
+                                    </center>
+                                </div>
+                            </div>
+                            <!-- /.row -->
+                        </div>
+                    </div>
+                    <!-- /.row -->
+                </div>
+                <!-- /.card -->
+                <!-- /.row -->
+            </div>
+        </div>
+        <!-- /.row -->
+    </div>
+    <!-- /.container -->
+    <!-------------mobile nav------------------>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="js/jasny-bootstrap.min.js"></script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap-select.min.js"></script>
+    <script src="js/smartable-javascript.js"></script>
+    <script src="js/flickity.pkgd.js"></script>
+    <script src="js/bootstrap-tour.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>

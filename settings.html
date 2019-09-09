@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="en" >
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>settings</title>
+      <link rel="stylesheet" href="./css/bootstrap.min.css">
+      <link rel="stylesheet" href="./css/smartable-theme.css">
+      <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+      <link rel="stylesheet" href="./font/css/font-awesome.min.css">
+      <link rel="stylesheet" href="./css/bootstrap-select.min.css">
+  	      <link href="css/jasny-bootstrap.min.css" rel="stylesheet" media="screen">
+   </head>
+   <body data-spy="scroll" data-offset="500" >
+         <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-static-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle pull-left" data-toggle="offcanvas" data-target="#mobile-menu" data-canvas="body">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand hidden-xs" href="#"> <img src="./img/logos/logo.png" alt="">
+                </a>
+                <a class="navbar-brand visible-xs" href="#"><img class="logo-mobile" src="./img/logos/logo-small.png" alt="">
+                </a>
+                <div class="toggle-badge pull-right">
+                    <a type="button" class="navbar-toggle" data-toggle="collapse" data-target="#notifications" href="#"> <span class="badge badge-mobile">2</span> </a>
+                </div>
+            </div>
+            <div class="collapse navbar-collapse" id="mobile-menu">
+                <div class="user_avater hidden-xs">
+                    <a href=""> <span class="badge">2</span> </a>
+                    <a href=""> <img class="user_img img-circle " src="./img/user/avatar.png" height="48" width="48" alt=""> </a>
+                </div>
+                <div class="user_avater visible-xs">
+                    <li>
+                        <a href=""> <img class="user_img img-circle " src="./img/user/avatar.png" alt=""> </a>
+                    </li>
+                    <li> <a href="./settings.html">Settings</a> </li>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li> <a href="./dashboard.html">Dashboard</a> </li>
+                    <li> <a href="./smartcv.html">SmartCV</a> </li>
+                    <li> <a href="./careers.html">Careers</a> </li>
+                    <li> <a href="./personality.html">Personality</a> </li>
+                    <li> <a href="./faqs.html">FAQs</a> </li>
+                </ul>
+            </div>
+
+            <!-- /.navbar-collapse -->
+        </div>
+
+        <!-- /.container -->
+    </nav>
+	   <!-- mobile notifications --> 
+ <div class="collapse notifications"class="container" id="notifications">
+               <h2>Notifications</h2>
+			   <p>We added five new missions to Smartable today! Don’t forget to check them out to earn points and level up.</p>
+			   <p class="date pull-right">2 Hours Ago</p><br>
+			   <hr>
+			   <p>A new workshop was just announced in your area! </p>
+			   <p class="date pull-right">3 Hours Ago</p>
+            </div>
+      <!-- / mobile notifications --> 
+ <div class="container">
+         <div class="row" id ="target_nav">
+            <center>
+               <div id="target_nav" class="col-xs-12 nav topbar hidden-md visible-xs">
+                  <!-- topbar -->              
+                  <ul class="list-inline" id="navmobile">
+                     <li >
+                        <a href="#1">Account</a>
+                     </li>
+                     <li>
+                        <a href="#2">Education</a>
+                     </li>
+                     <li>
+                        <a href="#3">Work Experience</a>
+                     </li>
+                  </ul>
+               </div>
+            </center>
+            <!--topbar col End-->
+            <div class ="col-md-12 hidden-xs">
+               <h1>Settings</h1>
+            </div>
+            <div class ="col-md-12 hidden-md visible-xs">
+               <center>
+                  <h1>Settings</h1>
+               </center>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-md-3  hidden-xs" id ="target_nav">
+               <!-- SIDEBAR -->
+               <ul class="nav sidebar" id="navside">
+                  <li class="subheading">SECTIONS </li>
+                  <li >
+                     <a href="#1">Account</a> 
+                  </li>
+                  <li>
+                     <a href="#2">Education</a> 
+                  </li>
+                  <li>
+                     <a href="#3">Work Experience</a> 
+                  </li>
+               </ul>
+            </div>
+            <!--sidebar col End-->
+            <!-- MAIN CONTENT -->
+            <div class="col-md-9" data-target="#target_nav">
+               <section class="card">
+                  <h2  id="1" class="active">Profile</h2>
+                  <form>
+                     <div class="form-group col-xs-12">
+                        <label for="emailInput">Email</label>
+                        <input type="email" class="form-control" id="emailInput" placeholder="Email">
+                     </div>
+                     <div class="form-group col-xs-12">
+                        <label for="passwordInput">Password</label>
+                        <input type="password" class="form-control" id="passwordInput" placeholder="Password">
+                     </div>
+                     <div class="form-group col-xs-12">
+                        <label for="confirmPassword">Confirm Password</label>
+                        <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm Password">
+                     </div>
+                     <hr>
+                     <div class="form-group col-xs-12">
+                        <label for="nameInput">Full Name</label>
+                        <input type="text" class="form-control text-settings" id="nameInput" placeholder="Name">
+                     </div>
+                     <div class="form-group col-xs-12">
+                        <label for="bioInput">Bio</label>
+                        <textarea class="form-control textarea" id="text" name="text" placeholder="Type here" rows="3" maxlength="120"></textarea>                   			  
+                     </div>
+                     <div class="row">
+                        <div class="col-xs-8">
+                           <p>Your bio will show up at the top of your SmartCV. 
+                              Consider including some of your personality traits:
+                           </p>
+                        </div>
+                        <div class="col-xs-4">
+                           <h6 class="pull-right" id="count_message"></h6>
+                        </div>
+                     </div>
+                     <div class="btn-group-md">
+                        <div class="btn-filter">
+                           <input id="box2" name="checkbox-group1" type="checkbox" hidden />
+                           <label for="box2">persuading</label>
+                        </div >
+                        <div class="btn-filter">
+                           <input id="box3" name="checkbox-group1" type="checkbox" hidden />
+                           <label for="box3">selling</label>
+                        </div >
+                        <div class="btn-filter">
+                           <input id="box4" name="checkbox-group1" type="checkbox" hidden />
+                           <label for="box4">solving</label>
+                        </div >
+                        <div class="btn-filter">
+                           <input id="box5" name="checkbox-group1" type="checkbox" hidden />
+                           <label for="box5">managing</label>
+                        </div >
+                        <div class="btn-filter">
+                           <input id="box6" name="checkbox-group1" type="checkbox" hidden />
+                           <label for="box6">selling</label>
+                        </div >
+                     </div>
+                     <hr>
+                     <div class="row">
+                        <div class="col-md-6">
+                           <p>Your Photo</p>
+                           <div class="col-md-6 ">					
+                              <img class="img-circle"class="img-responsive" src="http://placehold.it/100x100" alt="">
+                           </div>
+                           <div class="col-md-6">							   
+                              <div class="btn-file btn-file-sm btn-lg"><input type="file">Upload</div>
+                           </div>
+                        </div>
+                        <div class="col-md-6">
+                           <p>Your Background Photo</p>
+                           <div class="col-md-6 ">
+                              <img  class="img-responsive" src="http://placehold.it/200x100" alt="">
+                           </div>
+                           <div class="col-md-6">							   
+                              <div class="btn-file btn-file-sm btn-lg"><input type="file">Upload</div>
+                           </div>
+                        </div>
+                     </div>
+                     <center><button type="button" class="btn-primary btn-xlg">Save</button></center>
+                  </form>
+               </section>
+               <section class="card">
+                  <h2  id="2" class="active">Work & volunteer experience</h2>
+                  <p>SmartAble verifies work and volunteer experiences. Although not required, 
+                     uploading a document that shows proof of your experience and the information 
+                     you’ve wrote will allow you to earn a badge and a verified checkmark will appear 
+                     next to the experience on your SmartCV. <br>
+                     <b>Edits made to a verified experience will not show up until your entry has been re-verified.</b>
+                  </p>
+                  <form>
+                     <div class="form-group col-xs-12">
+                        <label for="Orgname">Organization Name</label>
+                        <input type="text" class="form-control text-settings" id="Orgname1" placeholder="Name">
+                     </div>
+                     <div class="form-group col-xs-12">
+                        <label for="dateInput">Involvement Time</label>
+                        <input type="text" class="form-control text-settings" id="dateInput1" placeholder="June 2016">
+                     </div>
+                     <div class="form-group col-xs-12">
+                        <label for="descr1">Description</label>
+                        <textarea class="form-control textarea" id="descr1" name="descr1" placeholder="Type here" rows="5" maxlength="120"></textarea>
+                     </div>
+                     <div class="row">
+                        <div class="col-xs-8">
+                           <p>Proof of Attendance</p>
+                           <p><span class="fa fa-times" aria-hidden="true"></span><span class="fa fa-file" aria-hidden="true"></span> Transcript.pdf</p>
+                           <p><span class="fa fa-times" aria-hidden="true"></span><span class="fa fa-file" aria-hidden="true"></span> Transcript.pdf</p>						   
+                              <div class="btn-file btn-file-lg btn-lg"><input type="file">Upload Document</div>
+                           <p>Example documents include a tax document, offer letter, pay stub and / or offical job description.</p>
+                        </div>
+                        <div class="col-xs-4">
+                           <h6 class="pull-right" id="count_descr1"></h6>
+                        </div>
+                     </div>
+                     <hr>
+                     <div class="row">
+                        <div class="col-md-8">
+                           <p>This entry is already verified. Edits will not show up on your SmartCV until your info has been re-verified. </p>
+                        </div>
+                        <div class="col-md-4">
+                           <button type="button" class="btn-primary btn-lg">Edit</button>
+                        </div>
+                     </div>
+                     <fieldset disabled>
+                        <div class="form-group col-xs-12">
+                           <label for="Orgname">Organization Name</label>
+                           <input type="text" class="form-control text-settings" id="Orgname2" placeholder="Name">
+                        </div>
+                        <div class="form-group col-xs-12">
+                           <label for="dateInput">Involvement Time</label>
+                           <input type="text" class="form-control text-settings" id="dateInput2" placeholder="June 2016">
+                        </div>
+                        <div class="form-group col-xs-12">
+                           <label for="descr2">Description</label>
+                           <textarea class="form-control textarea" id="descr2" name="text" placeholder="Type here" rows="5" maxlength="120"></textarea>
+                        </div>
+                        <div class="row">
+                           <div class="col-xs-8">
+                              <p>Proof of Attendance</p>
+                              <p><span class="fa fa-times" aria-hidden="true"></span><span class="fa fa-file" aria-hidden="true"></span> Transcript.pdf</p>
+                              <p><span class="fa fa-times" aria-hidden="true"></span><span class="fa fa-file" aria-hidden="true"></span> Transcript.pdf</p>
+                              <div class="btn-file btn-file-lg btn-file-lg-disabled btn-lg"><input type="file">Upload Document</div>
+                              <p>Example documents include a tax document, offer letter, pay stub and / or offical job description.</p>
+                           </div>
+                           <div class="col-xs-4">
+                              <h6 class="pull-right" id="count_descr2"></h6>
+                           </div>
+                        </div>
+                     </fieldset>
+                     <center>
+                     <button type="button" class="btn-secondary btn-xlg">Add another</button> 
+                     <button type="button" class="btn-primary btn-xlg">Save</button> 
+                     </center>
+                  </form>
+               </section>
+               <section class="card">
+                  <h2 id="3" class="active">Education</h2>
+                  <p>SmartAble verifies education experiences. Although not required,
+                     uploading a document that shows proof of your experience and the 
+                     information you’ve wrote will allow you to earn a badge and a verified 
+                     checkmark will appear next to the experience on your SmartCV. 
+                     <br>
+                     <b>Edits made to a verified experience will not show up until your entry has been re-verified.</b>
+                  </p>
+                  <form>
+                     <div class="form-group col-xs-12">
+                        <label for="Insname">Institute Name</label>
+                        <input type="text" class="form-control text-settings" id="Insname1" placeholder="Name">
+                     </div>
+                     <div class="form-group col-xs-12">
+                        <label for="GdateInput">Graduation Date</label>
+                        <input type="text" class="form-control text-settings" id="GdateInput1" placeholder="June 2016">
+                     </div>
+                     <div class="form-group col-xs-12">
+                        <label for="ancInput">Activities and Notable Courses</label>
+                        <textarea class="form-control textarea" id="ancInput" name="text" placeholder="Type here" rows="5" maxlength="120"></textarea>
+                     </div>
+                     <div class="row">
+                        <div class="col-xs-8">
+                           <p>Proof of Attendance</p>
+                           <p><span class="fa fa-times" aria-hidden="true"></span><span class="fa fa-file" aria-hidden="true"></span> Transcript.pdf</p>
+                           <p><span class="fa fa-times" aria-hidden="true"></span><span class="fa fa-file" aria-hidden="true"></span> Transcript.pdf</p>
+                           <div class="btn-file btn-file-lg btn-lg"><input type="file">Upload Document</div>
+                           <p>Example documents include a transcript or a diploma.</p>
+                        </div>
+                        <div class="col-xs-4">
+                           <h6 class="pull-right" id="count_ancInput"></h6>
+                        </div>
+                     </div>
+                     <hr>
+                     <div class="row">
+                        <div class="col-md-8">
+                           <p>This entry is already verified. Edits will not show up on your SmartCV until your info has been re-verified.  </p>
+                        </div>
+                        <div class="col-md-4">
+                           <button type="button" class="btn-primary btn-lg">Edit</button>
+                        </div>
+                     </div>
+                     <fieldset disabled>
+                        <div class="form-group col-xs-12">
+                           <label for="Insname">Institute Name</label>
+                           <input type="text" class="form-control text-settings" id="Insname2" placeholder="Name">
+                        </div>
+                        <div class="form-group col-xs-12">
+                           <label for="GdateInput">Graduation Date</label>
+                           <input type="text" class="form-control text-settings" id="GdateInput2" placeholder="June 2016">
+                        </div>
+                        <div class="form-group col-xs-12">
+                           <label for="anc2">Activities and Notable Courses</label>
+                           <textarea class="form-control textarea" id="anc2" name="text" placeholder="Type here" rows="5" maxlength="120"></textarea>		  
+                        </div>
+                        <div class="row">
+                           <div class="col-xs-8">
+                              <p>Proof of Attendance</p>
+                              <p><span class="fa fa-times" aria-hidden="true"></span><span class="fa fa-file" aria-hidden="true"></span> Transcript.pdf</p>
+                              <p><span class="fa fa-times" aria-hidden="true"></span><span class="fa fa-file" aria-hidden="true"></span> Transcript.pdf</p>
+                              <div class="btn-file btn-file-lg btn-file-lg-disabled btn-lg"><input type="file">Upload Document</div>
+                              <p>Example documents include a transcript or a diploma.</p>
+                           </div>
+                           <div class="col-xs-4">
+                              <h6 class="pull-right" id="count_anc2"></h6>
+                           </div>
+                        </div>
+                     </fieldset>
+                     <hr>
+                     <p>This entry is currently waiting to be verified. Feel free to change anything, add more docs, but you cannot remove existing documents. </p>
+                     <div class="form-group col-xs-12">
+                        <label for="Insname">Institute Name</label>
+                        <input type="text" class="form-control text-settings" id="Insname3" placeholder="Name">
+                     </div>
+                     <div class="form-group col-xs-12">
+                        <label for="GdateInput">Graduation Date</label>
+                        <input type="text" class="form-control text-settings" id="GdateInput3" placeholder="June 2016">
+                     </div>
+                     <div class="form-group col-xs-12">
+                        <label for="anc3">Activities and Notable Courses</label>
+                        <textarea class="form-control textarea" id="anc3" name="text" placeholder="Type here" rows="5" maxlength="120"></textarea> 
+                     </div>
+                     <div class="row">
+                        <div class="col-xs-8">
+                           <p>Proof of Attendance</p>
+                           <p><span class="fa fa-times" aria-hidden="true"></span><span class="fa fa-file" aria-hidden="true"></span> Transcript.pdf</p>
+                           <p><span class="fa fa-times" aria-hidden="true"></span><span class="fa fa-file" aria-hidden="true"></span> Transcript.pdf</p>
+                           <div class="btn-file btn-file-lg btn-lg"><input type="file">Upload Document</div>
+                           <p>Example documents include a transcript or a diploma.</p>
+                        </div>
+                        <div class="col-xs-4">
+                           <h6 class="pull-right" id="count_anc3"></h6>
+                        </div>
+                     </div>
+                     <center>
+                        <button type="button" class="btn-secondary btn-xlg">Add another</button> 
+                        <button type="button" class="btn-primary btn-xlg">Save</button> 
+                     </center>
+                  </form>
+               </section>
+               <!--content col End-->
+            </div>
+            <!--content row End-->
+         </div>
+      </div>
+      <!--div Container End-->
+
+	  	   <!-------------mobile nav------------------>
+     <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="js/jasny-bootstrap.min.js"></script>
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+      <!-- Include all compiled plugins (below), or include individual files as needed -->
+      <script src="js/bootstrap-select.min.js"></script>
+      <script src="js/textarea.js"></script>
+      <!-- Latest compiled and minified JavaScript --> 
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+   </body>
+</html>

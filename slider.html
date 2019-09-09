@@ -1,0 +1,397 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>slider</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/smartable-theme.css">
+    <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+    <link rel="stylesheet" href="./font/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/bootstrap-select.min.css">
+</head>
+
+<body>
+<div id="slider">
+    <div class="container col-md-6 col-centered slider col-xs-12 ">
+        <div id="carousel-outer" class="carousel slide" data-interval="false">
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <div class="row">
+                        <div class="col-xs-12 slider-div">
+                            <h2>Let's Create a Dashboard for You</h2>
+                            <h3>Your Dashboard is Your homebase</h3>
+                            <p>Everything that you'll need to access on Smartable can be found on the dashboard: careers, your profile, missions, and your newsfeed. But more on all of things later-let's get to know you better first
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <center>
+                                <a class="btn-primary btn-md" href="#carousel-outer" role="button" data-slide="next">
+                           Yes, let's <span class="fa fa-chevron-right" aria-hidden="true"></span>
+                        </a>
+                            </center>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                     <div class="row slider-div">
+                        <div class=" col-md-12">
+                            <h2>Choose Some Things That You Like </h2>
+                            <p>(We're not trying to trick you-choose as many as you want.)</p>
+                        </div>
+                        <div class=" visible-xs">
+                            <!--  slider, visible on mobile only -->
+                            <div class="innerScroll">
+                                <div class="Content-scroll">
+                                    <div class="btn-filter">
+                                        <input class="btn-filter"  id="box-s-2" name="checkbox-group1" type="checkbox" hidden />
+                                        <label for="box-s-2">fine art</label>
+                                    </div>
+                                    <div class="btn-filter">
+                                        <input class="btn-filter"  id="box-s-3" name="checkbox-group1" type="checkbox" hidden />
+                                        <label for="box-s-3">architecture</label>
+                                    </div>
+                                    <div class="btn-filter">
+                                        <input class="btn-filter"  id="box-s-4" name="checkbox-group1" type="checkbox" hidden />
+                                        <label for="box-s-4">physics</label>
+                                    </div>
+                                    <div class="btn-filter">
+                                        <input class="btn-filter"  id="box-s-5" name="checkbox-group1" type="checkbox" hidden />
+                                        <label for="box-s-5"> graphic design</label>
+                                    </div>
+                                    <div class="btn-filter">
+                                        <input class="btn-filter"  id="box-s-44" name="checkbox-group1" type="checkbox" hidden />
+                                        <label for="box-s-44">physics</label>
+                                    </div>
+                                    <div class="btn-filter">
+                                        <input class="btn-filter"  id="box-s-55" name="checkbox-group1" type="checkbox" hidden />
+                                        <label for="box-s-55"> graphic design</label>
+                                    </div>
+                                    <br>
+                                    <div class="btn-filter">
+                                        <input class="btn-filter"  id="box-s-6" name="checkbox-group1" type="checkbox" hidden />
+                                        <label for="box-s-6">engineering</label>
+                                    </div>
+                                    <div class="btn-filter">
+                                        <input class="btn-filter"  id="box-s-7" name="checkbox-group1" type="checkbox" hidden />
+                                        <label for="box-s-7"> biology</label>
+                                    </div>
+                                    <div class="btn-filter">
+                                        <input class="btn-filter"  id="box-s-8" name="checkbox-group1" type="checkbox" hidden />
+                                        <label for="box-s-8">european history</label>
+                                    </div>
+                                    <div class="btn-filter">
+                                        <input class="btn-filter"  id="box-s-9" name="checkbox-group1" type="checkbox" hidden />
+                                        <label for="box-s-9">finance</label>
+                                    </div>
+                                    <br>
+                                    <div class="btn-filter">
+                                        <input class="btn-filter"  id="box-s-10" name="checkbox-group1" type="checkbox" hidden />
+                                        <label for="box-s-10">film</label>
+                                    </div>
+                                    <div class="btn-filter">
+                                        <input class="btn-filter"  id="box-s-11" name="checkbox-group1" type="checkbox" hidden />
+                                        <label for="box-s-11">philosophy</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row col-md-12 hidden-xs">
+                            <div class="btn-filter">
+                                <input class="btn-filter"  id="box-md-2" name="checkbox-group1" type="checkbox" hidden />
+                                <label for="box-md-2">fine art</label>
+                            </div>
+                            <div class="btn-filter">
+                                <input class="btn-filter"  id="box-md-3" name="checkbox-group1" type="checkbox" hidden />
+                                <label for="box-md-3">architecture</label>
+                            </div>
+                            <div class="btn-filter">
+                                <input class="btn-filter"  id="box-md-4" name="checkbox-group1" type="checkbox" hidden />
+                                <label for="box-md-4">physics</label>
+                            </div>
+                            <div class="btn-filter">
+                                <input class="btn-filter"  id="box-md-5" name="checkbox-group1" type="checkbox" hidden />
+                                <label for="box-md-5"> graphic design</label>
+                            </div>
+                            <div class="btn-filter">
+                                <input class="btn-filter"  id="box-md-6" name="checkbox-group1" type="checkbox" hidden />
+                                <label for="box-md-6">engineering</label>
+                            </div>
+                            <div class="btn-filter">
+                                <input class="btn-filter"  id="box-md-7" name="checkbox-group1" type="checkbox" hidden />
+                                <label for="box-md-7"> biology</label>
+                            </div>
+                            <div class="btn-filter">
+                                <input class="btn-filter"  id="box-md-8" name="checkbox-group1" type="checkbox" hidden />
+                                <label for="box-md-8">european history</label>
+                            </div>
+                            <div class="btn-filter">
+                                <input class="btn-filter"  id="box-md-9" name="checkbox-group1" type="checkbox" hidden />
+                                <label for="box-md-9">finance</label>
+                            </div>
+                            <div class="btn-filter">
+                                <input class="btn-filter"  id="box-md-10" name="checkbox-group1" type="checkbox" hidden />
+                                <label for="box-md-10">film</label>
+                            </div>
+                            <div class="btn-filter">
+                                <input class="btn-filter"  id="box-md-11" name="checkbox-group1" type="checkbox" hidden />
+                                <label for="box-md-11">philosophy</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row col-md-12">
+                        <center>
+                            <a class="btn-cancel btn-md" href="#carousel-outer" role="button" data-slide="prev">
+                                <span class="fa fa-chevron-left" aria-hidden="true"></span>Back</a>
+                            <a class="btn-primary btn-md" href="#carousel-outer" role="button" data-slide="next">
+                     Got it! Next <span class="fa fa-chevron-right" aria-hidden="true"></a>
+                        </center>
+                    </div>
+                </div>
+                <div class="item">
+                                    <div class="row slider-div" id="Loading">
+                        <div class="col-xs-12" >
+                            <h3>Hang tight while we pick out some careers for you…</h3>
+                        </div>
+                    </div>
+                    <div id="LoadingCareers">
+                    <div class="row slider-div " >
+                        <div class="col-xs-12" id="slide2">
+                            <h3>
+                     We've selected some options for you based on the Keywords you picked.
+                  </h3>
+                            <p>Click on their cards to add them to your Dashboard - we'll notify you of relevant information about these careers, display related content and assign you missions to strengthen your skills.(Don't worry, you can adjust these later, too)
+                            </p>
+                        </div>
+                        <div class="visible-xs">
+                            <!--  slider, visible on mobile only -->
+                            <div class="innerScroll">
+                                <div class="Content-scroll">
+                                    <div class="img-check2">
+                                        <input class="img-check" type='checkbox' name='career-s-1' value='valuable' id="career-s-1" />
+                                        <label class="img-check" for="career-s-1">
+                                            <img class="img-responsive check-img" src="./img/dashboard/ondashboard-slider/architect.png" alt="card img">
+                                            <span>architect</span>
+                                        </label>
+                                        <input class="img-check" type='checkbox' name='career-s-2' value='valuable' id="career-s-2" />
+                                        <label class="img-check" for="career-s-2">
+                                            <img class="img-responsive check-img" src="./img/dashboard/ondashboard-slider/entrepreneur.png" alt="card img">
+                                            <span>entrepreneur</span>
+                                        </label>
+                                        <input class="img-check" type='checkbox' name='career-s-3' value='valuable' id="career-s-3" />
+                                        <label class="img-check" for="career-s-3">
+                                            <img class="img-responsive check-img" src="./img/dashboard/ondashboard-slider/architect.png" alt="card img"><span>architect</span>
+                                        </label>
+                                        <input class="img-check" type='checkbox' name='career-s-4' value='valuable' id="career-s-4" />
+                                        <label class="img-check" for="career-s-4">
+                                            <img class="img-responsive check-img" src="./img/dashboard/ondashboard-slider/developer.png" alt="card img">
+                                            <span>developer</span>
+                                        </label>
+                                        <input class="img-check" type='checkbox' name='career-s-5' value='valuable' id="career-s-5" />
+                                        <label class="img-check" for="career-s-5">
+                                            <img class="img-responsive check-img" src="./img/dashboard/ondashboard-slider/graphicdesigner.png" alt="card img">
+                                            <span>graphic designer</span>
+                                        </label>
+                                        <input class="img-check" type='checkbox' name='career-s-6' value='valuable' id="career-s-6" />
+                                        <label class="img-check" for="career-s-6">
+                                            <img class="img-responsive check-img" src="./img/dashboard/ondashboard-slider/developer.png" alt="card img">
+                                            <span>developer</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end myWorkContent -->
+                        </div>
+                        <div class=" hidden-xs">
+                            <center>
+                                <div class="row">
+                                    <!--/.Card 1-->
+                                    <div class="col-xs-4 img-check2">
+                                        <input class="img-check" type='checkbox' name='career-1' value='valuable' id="career-1" />
+                                        <label class="img-check" for="career-1">
+                                            <img class="img-responsive check-img" src="./img/dashboard/ondashboard-slider/architect.png" alt="card img">
+                                            <span>architect</span>
+                                        </label>
+                                    </div>
+                                    <!--/.Card1-->
+                                    <div class="col-xs-4 img-check2">
+                                        <!--Card 2-->
+                                        <input class="img-check" type='checkbox' name='career-2' value='valuable' id="career-2" />
+                                        <label class="img-check" for="career-2">
+                                            <img class="img-responsive check-img" src="./img/dashboard/ondashboard-slider/entrepreneur.png" alt="card img">
+                                            <span>entrepreneur</span>
+                                        </label>
+                                    </div>
+                                    <!--/.Card2-->
+                                    <div class="col-xs-4 img-check2">
+                                        <!--Card 3-->
+                                        <input class="img-check" type='checkbox' name='career-3' value='valuable' id="career-3" />
+                                        <label class="img-check" for="career-3">
+                                            <img class="img-responsive check-img" src="./img/dashboard/ondashboard-slider/architect.png" alt="card img"><span>architect</span>
+                                        </label>
+                                    </div>
+                                    <!--/.Card3-->
+                                </div>
+                                <div class="row">
+                                    <!--/.Card 1-->
+                                    <div class="col-xs-4 img-check2">
+                                        <input class="img-check" type='checkbox' name='career-4' value='valuable' id="career-4" />
+                                        <label class="img-check" for="career-4">
+                                            <img class="img-responsive check-img" src="./img/dashboard/ondashboard-slider/developer.png" alt="card img">
+                                            <span>developer</span>
+                                        </label>
+                                    </div>
+                                    <!--/.Card1 End-->
+                                    <div class="col-xs-4 img-check2">
+                                        <!--Card 2-->
+                                        <input class="img-check" type='checkbox' name='career-5' value='valuable' id="career-5" />
+                                        <label class="img-check" for="career-5">
+                                            <img class="img-responsive check-img" src="./img/dashboard/ondashboard-slider/graphicdesigner.png" alt="card img">
+                                            <span>graphic designer</span>
+                                        </label>
+                                        <!--/.Card-->
+                                    </div>
+                                    <div class="col-xs-4 img-check2">
+                                        <!--Card 3-->
+                                        <input class="img-check" type='checkbox' name='career-6' value='valuable' id="career-6" />
+                                        <label class="img-check" for="career-6">
+                                            <img class="img-responsive check-img" src="./img/dashboard/ondashboard-slider/developer.png" alt="card img">
+                                            <span>developer</span>
+                                        </label>
+                                        <!--/.Card-->
+                                    </div>
+
+                                </div>
+
+                                <div class="row">
+                                    <!--/.Card 1-->
+                                    <div class="col-xs-4 img-check2">
+                                        <input class="img-check" type='checkbox' name='career-7' value='valuable' id="career-7" />
+                                        <label class="img-check" for="career-7">
+                                            <img class="img-responsive check-img" src="./img/dashboard/ondashboard-slider/entrepreneur.png" alt="card img">
+                                            <span>entrepreneur</span>
+                                        </label>
+                                    </div>
+                                    <!--/.Card1 End-->
+                                    <div class="col-xs-4 img-check2">
+                                        <!--Card 2-->
+                                        <input class="img-check" type='checkbox' name='career-8' value='valuable' id="career-8" />
+                                        <label class="img-check" for="career-8">
+                                            <img class="img-responsive check-img" src="./img/dashboard/ondashboard-slider/architect.png" alt="card img">
+                                            <span>architect</span>
+                                        </label>
+                                        <!--/.Card-->
+                                    </div>
+                                    <div class="col-xs-4 img-check2">
+                                        <!--Card 3-->
+                                        <input class="img-check" type='checkbox' name='career-9' value='valuable' id="career-9" />
+                                        <label class="img-check" for="career-9">
+                                            <img class="img-responsive check-img" src="./img/dashboard/ondashboard-slider/graphicdesigner.png" alt="card img">
+                                            <span>graphic designer</span>
+                                        </label>
+                                        <!--/.Card-->
+                                    </div>
+                                </div>
+                            </center>
+                        </div>
+                    </div>
+                    <div class="row col-md-12">
+                        <center>
+                            <a class="btn-cancel btn-md" href="#carousel-outer" role="button" data-slide="prev">
+                                <span class="fa fa-chevron-left" aria-hidden="true"></span>Back</a>
+                            <a class="btn-primary btn-md" href="#carousel-outer" role="button" data-slide="next">
+               All Set! Next <span class="fa fa-chevron-right" aria-hidden="true"></span></a>
+                        </center>
+                    </div>
+                </div>
+                </div>
+                <div class="item">
+                    <div class="row slider-div">
+                        <div class="col-md-8">
+                            <h3>What are Missions?</h3>
+                            <p>Missions are tasks that we assign to you. They'll help you to learn more about yourself and your own career path, as well as help you gain valuable skills. From Smartable, you'll be able to access workshops, tutorials, and personality test, to name a few.
+                            </p>
+                        </div>
+                        <div class="col-md-4">
+                            <img class="img-responsive img-mission" src="./img/dashboard/ondashboard-slider/mission-card.png" alt="">
+                        </div>
+                    </div>
+                    <div class="row col-md-12">
+                        <center>
+                            <a class="btn-cancel btn-md" href="#carousel-outer" role="button" data-slide="prev">
+                                <span class="fa fa-chevron-left" aria-hidden="true"></span>Back</a>
+                            <a class="btn-primary btn-md" href="#carousel-outer" role="button" data-slide="next">
+                     Cool! Next <span class="fa fa-chevron-right" aria-hidden="true"></span></a>
+                        </center>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="row slider-div">
+                        <div class="col-md-8">
+                            <h3>What does this all turn into?</h3>
+                            <p>We at Smartable created the SmartCV -an interactive webpage that contains information about your accomplishments, skills, and experience - in one attractive package. They SmartCV is meant to be shared, both with potential employers and your friends.
+                            </p>
+                            <br>
+                            <p>Your SmartCV is editable, and is continuously updated as you level up on Smartable and accomplish missions.
+                            </p>
+                        </div>
+                        <div class="col-md-4">
+                            <img class="img-cv img-responsive" src="./img/dashboard/ondashboard-slider/img-cv.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="row col-xs-12">
+                        <center>
+                            <a class="btn-cancel btn-md" href="#carousel-outer" role="button" data-slide="prev">
+                                <span class="fa fa-chevron-left" aria-hidden="true"></span>Back</a>
+                            <a class="btn-primary btn-md" href="#carousel-outer" role="button" data-slide="next">
+                           Nice! Next <span class="fa fa-chevron-right" aria-hidden="true"></a>
+                        </center>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="row slider-div">
+                        <div class="col-md-12">
+                            <h3>Well, that's all we have for you today.</h3>
+                            <p>We hope you use Smartable and find it useful. And don't forget to let us know if you have any questions. We're here for you.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row col-md-12"> <!-- Controls -->
+                        <center>
+                            <a class="btn-cancel btn-md" href="#carousel-outer" role="button" data-slide="prev">
+                                <span class="fa fa-chevron-left" aria-hidden="true"></span>Back</a>
+                            <a class="btn-primary btn-md" href="#" role="button">Yay! Finish <span class="fa fa-chevron-right" aria-hidden="true"></a>
+                        </center>
+                    </div> <!-- Controls -->
+                </div>
+
+            </div>
+            <!-- Indicators -->
+            <ol class="carousel-indicators grey">
+                <li data-target="#" data-slide-to="0" class="active"></li>
+                <li data-target="#" data-slide-to="1"></li>
+                <li data-target="#" data-slide-to="2"></li>
+                <li data-target="#" data-slide-to="3"></li>
+                <li data-target="#" data-slide-to="4"></li>
+                <li data-target="#" data-slide-to="5"></li>
+            </ol>
+        </div>
+    </div>
+    <!-- /.container  -->
+</div>
+                                <script>
+setTimeout(function() {
+    $('#Loading').fadeOut('fast');$("#LoadingCareers").show();
+}, 20000); // <-- time in milliseconds
+                            </script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+
+</html>

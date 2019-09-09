@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>requect </title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/smartable-theme.css">
+    <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+    <link rel="stylesheet" href="./font/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/bootstrap-select.min.css">
+</head>
+
+
+<body class="landing-pages">
+   <!-- Header -->
+    <div id="header">
+        <div class="container">
+            <header class="row header">
+                <nav class="navbar-default navbar-static-top navbar-landing">
+                    <div class="brand pull-left">
+                        <button type="button" class="navbar-toggle pull-right" data-toggle="offcanvas" data-target="#mobile-menu" data-canvas="body">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#"><img class="logo-mobile" src="./img/logos/logo-small.png" alt="">
+                        </a>
+                    </div>
+                    <div class="collapse navbar-collapse pull-right" id="mobile-menu">
+                        <ul class="nav navbar-nav">
+                            <li> <a href="./home.html">Home</a> </li>
+                            <li> <a href="">About</a> </li>
+                            <li> <a href="./contact.html">Contact</a> </li>
+                            <li> <a href="#">العربية</a> </li>
+                        </ul>
+                        <button type="button" class="btn btn-outline-green btn-sm"> Login </button>
+                    </div>
+                </nav>
+            </header>
+            <!--./Header -->
+        </div>
+    </div>
+    <div class="wrapper">
+            <div class="container">
+            <div class="row requect-content">
+                <h2>SmartAble Demo</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a consectetur lorem. Ut vitae commodo risus. Sed egestas non odio a commodo. Ut luctus odio vel arcu auctor, quis venenatis purus accumsan. Vestibulum luctus metus at sollicitudin mollis. Nullam vulputate, nisl ac porta mollis, purus leo dapibus tellus, sit amet elementum eros mauris sit amet lorem. In ullamcorper at lorem nec </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="container ">
+                <section class="col-lg-6 col-md-7 col-xs-12   col-centered requect-form">
+                    <div class="card ">
+                        <h3>A representative will reach out shortly</h3>
+                        <p>Please complete all fields</p>
+                        <form>
+                            <div class="form-group">
+                                <input class="col-xs-12 text-settings" type="text" id="requectName" name="first_Last_name" placeholder="First Last Name">
+                                <input class="col-xs-12" type="email" id="requectEmail" name="email" placeholder="Email Address">
+                                <input class="col-xs-12 text-settings" type='text' pattern='^(?:0|\(?\+33\)?\s?|0033\s?)[1-79](?:[\.\-\s]?\d\d){4}$' name="Cellphone" placeholder="Cellphone Number">
+                                <div>
+                                    <script type="text/javascript" src="js/countries.js"></script>
+                                    <select class="col-xs-12 select-country text-settings" name="country" id="Country"></select>
+                                    <select class="col-xs-12 select-country text-settings" name="state" id="State">
+                                        <option default>Select City</option>
+                                    </select>
+                                </div>
+                                <input class="col-xs-12 text-settings" type="text" id="Company_Name" name="company_name" placeholder="Company Name">
+                                <input class="col-xs-12 text-settings" type="text" id="Company_Website" name="company_website" placeholder="Company Website">
+                                <input class="col-xs-12 text-settings" type="text" id="Demo_Descriptio" name="demo_description" placeholder="Demo Description">
+                                <input type="checkbox" id="check" class="requect">
+                                <label for="check" class="requect">
+                                    <span class="requect"></span> Subscribe to SmartAble Newsletter
+                                </label>
+                                <hr>
+                                <p>By submitting this form, you are confirming you have read and agree to our Terms and Privacy Statement.</p>
+                                <center>
+                                    <input type="submit" class="btn-primary btn-md" value="Request Now">
+                                </center>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+            </div>
+        </div><br/><br/><br/><br/><br/>
+    <!--Footer  -->
+        <footer>
+            <div class="container ">
+                <div class="col-xs-6 pull-left">
+                    <p> Smartable.me 2015 All rights reserved.</p>
+                </div>
+                <div class="col-xs-6 pull-right social">
+                    <a title="email" class="fa fa-envelope" aria-hidden="true" href="mailto:info@smatrable.me" target="_blank"></a>
+                    <a title="linkedin" class="fa fa-linkedin" aria-hidden="true" href="https://www.linkedin.com/company/smartable" target="_blank"></a>
+                    <a title="twitter" class="fa fa-twitter" aria-hidden="true" href="http://twitter.com/smartableme" target="_blank"></a>
+                    <a title="facebook" class="fa fa-facebook" aria-hidden="true" href="https://www.facebook.com/smartable.me" target="_blank"></a>
+                    <a title="instagram" class="fa fa-instagram" aria-hidden="true" href="http://instagram.com/smartableme" target="_blank"></a>
+                </div>
+            </div>
+        </footer>
+    <!--./Footer  -->
+    </div>
+
+    <script>
+    populateCountries("Country", "State");
+    </script>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="js/jasny-bootstrap.min.js"></script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap-select.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+
+</html>

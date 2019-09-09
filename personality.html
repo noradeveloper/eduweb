@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Personality</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/smartable-theme.css">
+    <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+    <link rel="stylesheet" href="./font/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/bootstrap-select.min.css">
+    <link href="css/jasny-bootstrap.min.css" rel="stylesheet" media="screen">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-static-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle pull-left" data-toggle="offcanvas" data-target="#mobile-menu" data-canvas="body">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand hidden-xs" href="#"> <img src="./img/logos/logo.png" alt="">
+                </a>
+                <a class="navbar-brand visible-xs" href="#"><img class="logo-mobile" src="./img/logos/logo-small.png" alt="">
+                </a>
+                <div class="toggle-badge pull-right">
+                    <a type="button" class="navbar-toggle" data-toggle="collapse" data-target="#notifications" href="#"> <span class="badge badge-mobile">2</span> </a>
+                </div>
+            </div>
+            <div class="collapse navbar-collapse" id="mobile-menu">
+                <div class="user_avater hidden-xs">
+                    <a href=""> <span class="badge">2</span> </a>
+                    <a href=""> <img class="user_img img-circle " src="./img/user/avatar.png" height="48" width="48" alt=""> </a>
+                </div>
+                <div class="user_avater visible-xs">
+                    <li>
+                        <a href=""> <img class="user_img img-circle " src="./img/user/avatar.png" alt=""> </a>
+                    </li>
+                    <li> <a href="./settings.html">Settings</a> </li>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li> <a href="./dashboard.html">Dashboard</a> </li>
+                    <li> <a href="./smartcv.html">SmartCV</a> </li>
+                    <li> <a href="./careers.html">Careers</a> </li>
+                    <li class="active"> <a href="./personality.html">Personality</a> </li>
+                    <li> <a href="./faqs.html">FAQs</a> </li>
+                </ul>
+            </div>
+
+            <!-- /.navbar-collapse -->
+        </div>
+
+        <!-- /.container -->
+    </nav>
+    <!-- mobile notifications -->
+    <div class="collapse notifications" id="notifications">
+        <h2>Notifications</h2>
+        <p>We added five new missions to Smartable today! Don’t forget to check them out to earn points and level up.</p>
+        <p class="date pull-right">2 Hours Ago</p>
+        <br>
+        <hr>
+        <p>A new workshop was just announced in your area! </p>
+        <p class="date pull-right">3 Hours Ago</p>
+    </div>
+    <!-- / mobile notifications -->
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-9">
+                <h1 class="page_title">Your Personality</h1>
+            </div>
+            <div class="col-xs-12 col-sm-3">
+                <center>
+                    <button class="btn btn-secondary assessment_btn">Take More Assessments</button>
+                </center>
+            </div>
+        </div>
+        <div class="row">
+            <div class=" col-xs-12 col-md-6">
+                <div class="card">
+                    <h2>Personality Blend</h2>
+                    <center><img src="./img/dashboard/personality/inventor-visionary.png" alt="" class="img-responsive" />
+                    </center>
+                    <h3> Inventor / Visionary </h3>
+                    <p>You are sociable by nature with an eye for the eclectic. You enjoy being around other people and are especially attracted to the art world. The lead in the play, the artistic mind power behind the big idea or the singer in the band, you always shine. Others are drawn to you and admire you. You thrive out in the world and appreciate being surrounded by other people. The only exception to this is when you are working on something artistic, where you can
+                    </p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-6">
+                <div class="card">
+                    <h2>Personality Radar</h2>
+                    <center>
+                        <div id="chart" class="thumbnail"></div>
+                    </center>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-6">
+                <div class="card">
+                    <h2>Personality Keywords</h2>
+                    <div class="btn-filter">
+                        <input class="btn-filter" id="box2" name="checkbox-group1" type="checkbox" hidden />
+                        <label for="box2">persuading</label>
+                    </div>
+                    <div class="btn-filter">
+                        <input class="btn-filter" id="box3" name="checkbox-group1" type="checkbox" hidden />
+                        <label for="box3">selling</label>
+                    </div>
+                    <div class="btn-filter">
+                        <input class="btn-filter" id="box4" name="checkbox-group1" type="checkbox" hidden />
+                        <label for="box4">solving</label>
+                    </div>
+                    <div class="btn-filter">
+                        <input class="btn-filter" id="box5" name="checkbox-group1" type="checkbox" hidden />
+                        <label for="box5">managing</label>
+                    </div>
+                    <div class="btn-filter">
+                        <input class="btn-filter" id="box6" name="checkbox-group1" type="checkbox" hidden />
+                        <label for="box6">selling</label>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-6">
+                <div class="card">
+                    <h2>Ideal Environment</h2>
+                    <p> Based on your personality, an Ideal work environment would have the following features. </p>
+                    <ul class="dashed">
+                        <li>Allows for both independent work and teamwork </li>
+                        <li>Values creativity </li>
+                        <li>Gives you authority over your creative process </li>
+                        <li>Values the creative process </li>
+                        <li>Encourages self-expression </li>
+                        <li>Sustains open-mindedness </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--content row End-->
+    </div>
+    <!--div Container End-->
+    <!-------------mobile nav------------------>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="js/jasny-bootstrap.min.js"></script>
+    <!-------------radar chart------------------>
+    <script src="js/d3.v3.min.js"></script>
+    <script src="js/RadarChart.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap-select.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+
+</html>

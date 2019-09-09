@@ -1,0 +1,862 @@
+<!doctype html>
+<html lang="en" >
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>SmartCV</title>
+      <link rel="stylesheet" href="./css/bootstrap.min.css">
+      <link rel="stylesheet" href="./css/smartable-theme.css">
+      <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+      <link rel="stylesheet" href="./font/css/font-awesome.min.css">
+      <link rel="stylesheet" href="./css/bootstrap-select.min.css">
+      <link media="print" rel="stylesheet" href="./css/printable.css">
+	      <link href="css/jasny-bootstrap.min.css" rel="stylesheet" media="screen">
+   </head>
+   <body>
+      <!-- Navigation -->
+	  <nav class="navbar navbar-default navbar-static-top" role="navigation">
+         <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+               <button type="button" class="navbar-toggle pull-left" data-toggle="offcanvas" data-target="#mobile-menu" data-canvas="body">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+               </button>
+               <a class="navbar-brand hidden-xs" href="#"> <img src="./img/logos/logo.png" alt=""></a>
+			   <a class="navbar-brand visible-xs" href="#"><img class="logo-mobile" src="./img/logos/logo-small.png" alt=""></a>
+			   <div class="toggle-badge pull-right"><a  type="button" class="navbar-toggle" data-toggle="collapse" data-target="#notifications" class="visible-xs pull-right" href="#"> <span class="badge badge-mobile">2</span> </a> </div>
+            </div>
+			 <div class="collapse navbar-collapse" id="mobile-menu">
+               <div class="user_avater hidden-xs">
+			    <a  href=""> <span class="badge">2</span> </a>
+			   <a href=""> <img class="user_img img-circle " src="./img/user/avatar.png" height="48" width="48"alt=""> </a>
+			   </div>
+               <div class="user_avater visible-xs">
+			   <li>  <a href=""> <img class="user_img img-circle " src="./img/user/avatar.png" alt=""> </a>  </li>
+			   <li>  <a href="./settings.html">Settings</a> </li>
+			   </div>
+			  <ul class="nav navbar-nav">
+                  <li> <a href="./dashboard.html">Dashboard</a> </li>
+                  <li class="active"> <a href="./smartcv.html">SmartCV</a> </li>
+                  <li> <a href="./careers.html">Careers</a> </li>
+                  <li> <a href="./personality.html">Personality</a> </li>
+                  <li> <a href="./faqs.html">FAQs</a> </li>
+               </ul>
+            </div>
+
+            <!-- /.navbar-collapse -->
+         </div>
+
+         <!-- /.container -->
+      </nav>
+	   <!-- mobile notifications -->
+ <div class="collapse notifications"class="container" id="notifications">
+               <h2>Notifications</h2>
+			   <p>We added five new missions to Smartable today! Don’t forget to check them out to earn points and level up.</p>
+			   <p class="date pull-right">2 Hours Ago</p><br>
+			   <hr>
+			   <p>A new workshop was just announced in your area! </p>
+			   <p class="date pull-right">3 Hours Ago</p>
+            </div>
+      <!-- / mobile notifications -->
+
+
+	                    <div id="Edit"> <div class="edit">
+				  <h2>Edit Mode</h2>
+                     <button id="Cancel-Changes" class="btn-cancel btn-lg pull-left" type="button" data-toggle="collapse" data-target="#" aria-expanded="false"onclick="showLess()">Cancel Changes</button>
+                     <button id="save-Changes"class="btn-primary btn-lg pull-right" type="button" data-toggle="collapse" data-target="#" aria-expanded="false"onclick="showLess()">Save Changes</button>
+                  </div>
+				  </div>
+      <div class="jumbotron">
+         <div class="container">
+            <div class="row do-not-print">
+               <div class="col-xs-12">
+                  <div class="collapse pull-right hidden-xs" id="Share">
+                     <ul class="dropdown-menu badge badgeshare">
+                        <center>
+                           <li><a href="#"><span class="fa fa-facebook" aria-hidden="true"></span></a></li>
+                           <li><a href="#"><span class="fa fa-twitter" aria-hidden="true"></span></a></li>
+                           <li><a href="#"><span class="fa fa-linkedin-square" aria-hidden="true"></span></a></li>
+                        </center>
+                     </ul>
+                  </div>
+
+                  <div class="hidden-xs pull-right">
+                     <button id="Esmart" class="btn-secondary btn-lg" type="button" data-toggle="collapse" data-target="#Edit" aria-expanded="false"onclick="showMore()">Edit SmartCV</button>
+                     <button id="Shsmart"class="btn-primary btn-lg" type="button" data-toggle="collapse" data-target="#Share" aria-expanded="false">Share</button>
+                  </div>
+               </div>
+               <div class="col-xs-12 visible-xs">
+                  <center>
+                     <button class="btn-secondary btn-lg">Edit SmartCV</button>
+                     <button class="btn-primary btn-lg" type="button" data-toggle="collapse" data-target="#Sharesm" aria-expanded="false">Share</button>
+                     <div class="collapse pull-right" id="Sharesm">
+                        <ul class=" dropdown-menu badge badgeshare">
+                           <center>
+                              <li><a href="#"><span class="fa fa-facebook" aria-hidden="true"></span></a></li>
+                              <li><a href="#"><span class="fa fa-twitter" aria-hidden="true"></span></a></li>
+                              <li><a href="#"><span class="fa fa-linkedin-square" aria-hidden="true"></span></a></li>
+                           </center>
+                        </ul>
+                     </div>
+                  </center>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-12">
+                  <img class="img-responsive img-circle do-not-print avatar" src="./img/user/avatar.png" alt="">
+                  <div class ="row">
+                     <div class="col-md-5">
+                        <span id="Edit-pencile"class="fa fa-pencil" aria-hidden="true"></span>
+                        <h1 class="username">Carly Moss</h1>
+                     </div>
+                  </div>
+                  <div class="col-md-7 nopadding">
+                     <b>aspiring Product Designer from Boston, MA</b>
+                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id mi velit.
+                        Nunc et neque quis massa vestibulum venenatis et vel tellus.
+                        Quisque consectetur tortor nibh, sit amet molestie.
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!--container End-->
+      </div>
+      <!--jumbotron End-->
+      <div class="container">
+         <div class="row">
+            <!--content first col start-->
+            <div class="col-md-6">
+               <!--personality content-->
+               <article class="card do-print" >
+                  <h2>Personality</h2>
+                  <center>
+                     <div id="chart" class="thumbnail"></div>
+                  </center>
+               </article>
+               <!--personality keywords content-->
+               <article class="card">
+                  <h2>Personality Keywords</h2>
+                  <div class="btn-filter">
+                     <input class="btn-filter" id="box2" name="checkbox-group1" type="checkbox" hidden />
+                     <label for="box2">persuading</label>
+                  </div >
+                  <div class="btn-filter">
+                     <input class="btn-filter" id="box3" name="checkbox-group1" type="checkbox" hidden />
+                     <label for="box3">selling</label>
+                  </div >
+                  <div class="btn-filter">
+                     <input class="btn-filter" id="box4" name="checkbox-group1" type="checkbox" hidden />
+                     <label  for="box4">solving</label>
+                  </div >
+                  <div class="btn-filter">
+                     <input class="btn-filter" id="box5" name="checkbox-group1" type="checkbox" hidden />
+                     <label  for="box5">managing</label>
+                  </div >
+                  <div class="btn-filter">
+                     <input class="btn-filter" id="box6" name="checkbox-group1" type="checkbox" hidden />
+                     <label  for="box6">selling</label>
+                  </div >
+               </article>
+               <!--education content-->
+               <article class="card">
+                  <span id="Epen1"class="fa fa-pencil" aria-hidden="true"></span>
+                  <h2>Education</h2>
+                  <h3>Northeastern University  <span class="fa fa-check-circle"></span></h3>
+                  <p class="date">September 2011 - May  2016</p>
+                  <ul class="dashed">
+                     <li>Block content blah lorem ipsum lorem ipsum lorem</li>
+                  </ul>
+               </article>
+               <article class="card">
+                  <!--work experience content--><span id="Epen2"class="fa fa-pencil" aria-hidden="true"></span>
+                  <h2>Work Experience </h2>
+                  <h3>Designer, HubSpot, Cambridge, MA  <span class="fa fa-check-circle"></span> </h3>
+                  <p class="date">September 2011 - May  2016</p>
+                  <ul class="dashed">
+                     <li>Block content blah lorem ipsum lorem ipsum lorem</li>
+                  </ul>
+                  <h3>Designer, HubSpot, Cambridge, MA  <span class="fa fa-check-circle"> </span></h3>
+                  <p class="date">September 2011 - May  2016</p>
+                  <ul class="dashed">
+                     <li>Block content blah lorem ipsum lorem ipsum lorem</li>
+                  </ul>
+               </article>
+            </div>
+            <!--content second col start-->
+            <div class="col-md-6">
+               <article class="card">
+                  <h2>Smartable progress</h2>
+                  <section class=" row">
+                     <div class="col-xs-12">
+                        <!--progress content-->
+                        <div class="col-xs-4">
+                           <div class="circle">
+                              <h2>30</h2>
+                              <p>missions completed</p>
+                           </div>
+                        </div>
+                        <div class="col-xs-4">
+                           <div class="circle">
+                              <h2>9</h2>
+                              <p>badges <br>earned</p>
+                           </div>
+                        </div>
+                        <div class="col-xs-4">
+                           <div class="circle">
+                              <h2>3</h2>
+                              <p>career paths explored</p>
+                           </div>
+                        </div>
+                     </div>
+                  </section>
+               </article>
+               <!--first track content-->
+               <article class="card">
+                  <span id="Epen3"class="fa fa-pencil" aria-hidden="true" data-toggle="modal" data-target=".modal-sm-s1"></span>
+                  <h2>Track: Graphic Designer</h2>
+                  <div class="noScreen col-xs-12">
+                     <div class="col-xs-6">
+                        <div class="row">
+                           <div class=" col-xs-6 nopadding">
+                              <img class="pull-left print-img" src="./img/dashboard/smartcv/maya.png" alt="">
+                           </div>
+                           <div class="nopadding col-xs-6">
+                              <p class="caption">Completed a course on Illustrator<br>
+                                 Completed a 30 minute online course on Lynda.com
+                              </p>
+                           </div>
+                           <div class=" col-xs-6  nopadding">
+                              <img class="pull-left print-img" src="./img/dashboard/smartcv/maya.png" alt="">
+                           </div>
+                           <div class="nopadding col-xs-6">
+                              <p class="caption">Completed a course on Illustrator<br>
+                                 Completed a 30 minute online course on Lynda.com
+                              </p>
+                           </div>
+                           <div class=" col-xs-6 nopadding">
+                              <img class="pull-left print-img" src="./img/dashboard/smartcv/maya.png" alt="">
+                           </div>
+                           <div class="nopadding col-xs-6">
+                              <p class="caption">Completed a course on Illustrator<br>
+                                 Completed a 30 minute online course on Lynda.com
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-xs-6 ">
+                        <div class="row ">
+                           <div class="col-xs-6 nopadding">
+                              <img class="pull-left print-img" src="./img/dashboard/smartcv/maya.png" alt="">
+                           </div>
+                           <div class="nopadding col-xs-6">
+                              <p class="caption">Completed a course on Illustrator<br>
+                                 Completed a 30 minute online course on Lynda.com
+                              </p>
+                           </div>
+                           <div class="col-xs-6 nopadding">
+                              <img class="pull-left print-img" src="./img/dashboard/smartcv/maya.png" alt="">
+                           </div>
+                           <div class="nopadding col-xs-6">
+                              <p class="caption">Completed a course on Illustrator<br>
+                                 Completed a 30 minute online course on Lynda.com
+                              </p>
+                           </div>
+                           <div class="col-xs-6 nopadding">
+                              <img class="pull-left print-img" src="./img/dashboard/smartcv/maya.png" alt="">
+                           </div>
+                           <div class="nopadding col-xs-6">
+                              <p class="caption">Completed a course on Illustrator<br>
+                                 Completed a 30 minute online course on Lynda.com
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+                     <p>& 9 more accomplishments</p>
+                  </div>
+                  <div id="smartCarousel-1" class="carousel slide smartCarousel do-not-print" data-ride="carousel">
+                     <!-- Carousel items -->
+                     <div class="carousel-inner">
+                        <div class="item active">
+                           <div class="row">
+                              <div class="col-xs-4 hover_img">
+                                 <img class="thumbnail" src="./img/dashboard/smartcv/maya.png" alt="">
+                                 <span>
+                                    <img class="thumbnail" src="./img/dashboard/smartcv/badeg-hover.png" />
+                                    <p class="text-content thumbnail">Watched a lynda tutorial on using photoshop</p>
+                                 </span>
+                              </div>
+                              <div class="col-xs-4 hover_img">
+                                 <img class="thumbnail" src="./img/dashboard/smartcv/maya.png"  alt="">
+                                 <span>
+                                    <img class="thumbnail" src="./img/dashboard/smartcv/badeg-hover.png" />
+                                    <p class="text-content thumbnail ">Watched a lynda tutorial on using photoshop</p>
+                                 </span>
+                              </div>
+                              <div class="col-xs-4 hover_img">
+                                 <img class="thumbnail" src="./img/dashboard/smartcv/maya.png" alt="">
+                                 <span>
+                                    <img class="thumbnail" src="./img/dashboard/smartcv/badeg-hover.png" />
+                                    <p class="text-content thumbnail">Watched a lynda tutorial on using photoshop</p>
+                                 </span>
+                              </div>
+                           </div>
+                           <!--/row-->
+                        </div>
+                        <!--/item-->
+                        <div class="item">
+                           <div class="row">
+                              <div class="col-xs-4 hover_img">
+                                 <img class="thumbnail" src="./img/dashboard/smartcv/maya.png" alt="">
+                                 <span>
+                                    <img class="thumbnail" src="./img/dashboard/smartcv/badeg-hover.png" />
+                                    <p class="text-content thumbnail">Watched a lynda tutorial on using photoshop</p>
+                                 </span>
+                              </div>
+                              <div class="col-xs-4 hover_img">
+                                 <img class="thumbnail" src="./img/dashboard/smartcv/maya.png"  alt="">
+                                 <span>
+                                    <img class="thumbnail" src="./img/dashboard/smartcv/badeg-hover.png" />
+                                    <p class="text-content thumbnail ">Watched a lynda tutorial on using photoshop</p>
+                                 </span>
+                              </div>
+                              <div class="col-xs-4 hover_img">
+                                 <img class="thumbnail" src="./img/dashboard/smartcv/maya.png" alt="">
+                                 <span>
+                                    <img class="thumbnail" src="./img/dashboard/smartcv/badeg-hover.png" />
+                                    <p class="text-content thumbnail">Watched a lynda tutorial on using photoshop</p>
+                                 </span>
+                              </div>
+                           </div>
+                           <!--/row-->
+                        </div>
+                        <!--/item-->
+                        <div class="item">
+                           <div class="row">
+                              <div class="col-xs-4 hover_img">
+                                 <img class="thumbnail" src="./img/dashboard/smartcv/maya.png" alt="">
+                                 <span>
+                                    <img class="thumbnail" src="./img/dashboard/smartcv/badeg-hover.png" />
+                                    <p class="text-content thumbnail">Watched a lynda tutorial on using photoshop</p>
+                                 </span>
+                              </div>
+                              <div class="col-xs-4 hover_img">
+                                 <img class="thumbnail" src="./img/dashboard/smartcv/maya.png"  alt="">
+                                 <span>
+                                    <img class="thumbnail" src="./img/dashboard/smartcv/badeg-hover.png" />
+                                    <p class="text-content thumbnail ">Watched a lynda tutorial on using photoshop</p>
+                                 </span>
+                              </div>
+                              <div class="col-xs-4 hover_img">
+                                 <img class="thumbnail" src="./img/dashboard/smartcv/maya.png" alt="">
+                                 <span>
+                                    <img class="thumbnail" src="./img/dashboard/smartcv/badeg-hover.png" />
+                                    <p class="text-content thumbnail">Watched a lynda tutorial on using photoshop</p>
+                                 </span>
+                              </div>
+                           </div>
+                           <!--/row-->
+                        </div>
+                        <!--/item-->
+                     </div>
+                     <!--/carousel-inner-->
+                     <a class="left carousel-control fa fa-angle-left fa-3x" href="#smartCarousel-1" role="button" data-slide="prev">
+                     <span class="sr-only">Previous</span></a>
+                     <a class="right carousel-control fa fa-angle-right fa-3x" href="#smartCarousel-1" role="button" data-slide="next">
+                     <span class="sr-only">Next</span></a>
+                  </div>
+               </article>
+               <!--second track content-->
+               <article class="card">
+                  <span id="Epen4"class="fa fa-pencil" aria-hidden="true" data-toggle="modal" data-target=".modal-sm-s2"></span>
+                  <h2>Track: Video Game Designer</h2>
+                  <div class="noScreen col-xs-12">
+                     <div class="col-xs-6">
+                        <div class="row">
+                           <div class="row nopadding">
+                              <div class=" col-xs-6 nopadding">
+                                 <img class="pull-left print-img" src="./img/dashboard/smartcv/maya.png" alt="">
+                              </div>
+                              <div class="nopadding col-xs-6 ">
+                                 <p class="caption">Completed a course on Illustrator<br>
+                                    Completed a 30 minute online course on Lynda.com
+                                 </p>
+                              </div>
+                           </div>
+                           <div class="row nopadding">
+                              <div class=" col-xs-6  nopadding">
+                                 <img class="pull-left print-img" src="./img/dashboard/smartcv/maya.png" alt="">
+                              </div>
+                              <div class="nopadding col-xs-6 ">
+                                 <p class="caption">Completed a course on Illustrator<br>
+                                    Completed a 30 minute online course on Lynda.com
+                                 </p>
+                              </div>
+                           </div>
+                           <div class="row nopadding">
+                              <div class=" col-xs-6 nopadding">
+                                 <img class="pull-left print-img" src="./img/dashboard/smartcv/maya.png" alt="">
+                              </div>
+                              <div class="nopadding col-xs-6 ">
+                                 <p class="caption">Completed a course on Illustrator<br>
+                                    Completed a 30 minute online course on Lynda.com
+                                 </p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-xs-6 ">
+                        <div class="row ">
+                           <div class="row nopadding">
+                              <div class="col-xs-6 nopadding">
+                                 <img class="pull-left print-img" src="./img/dashboard/smartcv/maya.png" alt="">
+                              </div>
+                              <div class="nopadding col-xs-6">
+                                 <p class="caption">Completed a course on Illustrator<br>
+                                    Completed a 30 minute online course on Lynda.com
+                                 </p>
+                              </div>
+                           </div>
+                           <div class="row nopadding">
+                              <div class="col-xs-6 nopadding">
+                                 <img class="pull-left print-img" src="./img/dashboard/smartcv/maya.png" alt="">
+                              </div>
+                              <div class="nopadding col-xs-6">
+                                 <p class="caption">Completed a course on Illustrator<br>
+                                    Completed a 30 minute online course on Lynda.com
+                                 </p>
+                              </div>
+                           </div>
+                           <div class="row nopadding">
+                              <div class="col-xs-6 nopadding">
+                                 <img class="pull-left print-img" src="./img/dashboard/smartcv/maya.png" alt="">
+                              </div>
+                              <div class="nopadding col-xs-6">
+                                 <p class="caption">Completed a course on Illustrator<br>
+                                    Completed a 30 minute online course on Lynda.com
+                                 </p>
+                              </div>
+                              <div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <p>& 9 more accomplishments</p>
+                  </div>
+                  <div id="smartCarousel-2" class="carousel slide smartCarousel do-not-print" data-ride="carousel">
+                     <!-- Carousel items -->
+                     <div class="carousel-inner">
+                        <div class="item active">
+                           <div class="row">
+                              <div class="col-xs-4 hover_img">
+                                 <img class="thumbnail" src="./img/dashboard/smartcv/maya.png" alt="">
+                                 <span>
+                                    <img class="thumbnail" src="./img/dashboard/smartcv/badeg-hover.png" />
+                                    <p class="text-content thumbnail">Watched a lynda tutorial on using photoshop</p>
+                                 </span>
+                              </div>
+                              <div class="col-xs-4 hover_img">
+                                 <img class="thumbnail" src="./img/dashboard/smartcv/maya.png"  alt="">
+                                 <span>
+                                    <img class="thumbnail" src="./img/dashboard/smartcv/badeg-hover.png" />
+                                    <p class="text-content thumbnail ">Watched a lynda tutorial on using photoshop</p>
+                                 </span>
+                              </div>
+                              <div class="col-xs-4 hover_img">
+                                 <img class="thumbnail" src="./img/dashboard/smartcv/maya.png" alt="">
+                                 <span>
+                                    <img class="thumbnail" src="./img/dashboard/smartcv/badeg-hover.png" />
+                                    <p class="text-content thumbnail">Watched a lynda tutorial on using photoshop</p>
+                                 </span>
+                              </div>
+                           </div>
+                           <!--/row-->
+                        </div>
+                        <!--/item-->
+                        <div class="item">
+                           <div class="row">
+                              <div class="col-xs-4 hover_img">
+                                 <img class="thumbnail" src="./img/dashboard/smartcv/maya.png" alt="">
+                                 <span>
+                                    <img class="thumbnail" src="./img/dashboard/smartcv/badeg-hover.png" />
+                                    <p class="text-content thumbnail">Watched a lynda tutorial on using photoshop</p>
+                                 </span>
+                              </div>
+                              <div class="col-xs-4 hover_img">
+                                 <img class="thumbnail" src="./img/dashboard/smartcv/maya.png"  alt="">
+                                 <span>
+                                    <img class="thumbnail" src="./img/dashboard/smartcv/badeg-hover.png" />
+                                    <p class="text-content thumbnail ">Watched a lynda tutorial on using photoshop</p>
+                                 </span>
+                              </div>
+                              <div class="col-xs-4 hover_img">
+                                 <img class="thumbnail" src="./img/dashboard/smartcv/maya.png" alt="">
+                                 <span>
+                                    <img class="thumbnail" src="./img/dashboard/smartcv/badeg-hover.png" />
+                                    <p class="text-content thumbnail">Watched a lynda tutorial on using photoshop</p>
+                                 </span>
+                              </div>
+                           </div>
+                           <!--/row-->
+                        </div>
+                        <!--/item-->
+                        <div class="item">
+                           <div class="row">
+                              <div class="col-xs-4 hover_img">
+                                 <img class="thumbnail" src="./img/dashboard/smartcv/maya.png" alt="">
+                                 <span>
+                                    <img class="thumbnail" src="./img/dashboard/smartcv/badeg-hover.png" />
+                                    <p class="text-content thumbnail">Watched a lynda tutorial on using photoshop</p>
+                                 </span>
+                              </div>
+                              <div class="col-xs-4 hover_img">
+                                 <img class="thumbnail" src="./img/dashboard/smartcv/maya.png"  alt="">
+                                 <span>
+                                    <img class="thumbnail" src="./img/dashboard/smartcv/badeg-hover.png" />
+                                    <p class="text-content thumbnail ">Watched a lynda tutorial on using photoshop</p>
+                                 </span>
+                              </div>
+                              <div class="col-xs-4 hover_img">
+                                 <img class="thumbnail" src="./img/dashboard/smartcv/maya.png" alt="">
+                                 <span>
+                                    <img class="thumbnail" src="./img/dashboard/smartcv/badeg-hover.png" />
+                                    <p class="text-content thumbnail">Watched a lynda tutorial on using photoshop</p>
+                                 </span>
+                              </div>
+                           </div>
+                           <!--/row-->
+                        </div>
+                        <!--/item-->
+                     </div>
+                     <a class="left carousel-control fa fa-angle-left fa-3x" href="#smartCarousel-2" role="button" data-slide="prev">
+                     <span class="sr-only">Previous</span></a>
+                     <a class="right carousel-control fa fa-angle-right fa-3x" href="#smartCarousel-2" role="button" data-slide="next">
+                     <span class="sr-only">Next</span></a>
+                  </div>
+               </article>
+               <!--third track content-->
+               <article class="card">
+                  <span id="Epen5"class="fa fa-pencil" aria-hidden="true" data-toggle="modal" data-target=".modal-sm-s3"></span>
+                  <h2>Track: Product Designer</h2>
+                  <div class="noScreen col-xs-12">
+                     <div class="col-xs-6">
+                        <div class="row">
+                           <div class=" col-xs-6 nopadding">
+                              <img class="pull-left print-img" src="./img/dashboard/smartcv/maya.png" alt="">
+                           </div>
+                           <div class="nopadding col-xs-6 ">
+                              <p class="caption">Completed a course on Illustrator<br>
+                                 Completed a 30 minute online course on Lynda.com
+                              </p>
+                           </div>
+                           <div class=" col-xs-6  nopadding">
+                              <img class="pull-left print-img" src="./img/dashboard/smartcv/maya.png" alt="">
+                           </div>
+                           <div class="nopadding col-xs-6 ">
+                              <p class="caption">Completed a course on Illustrator<br>
+                                 Completed a 30 minute online course on Lynda.com
+                              </p>
+                           </div>
+                           <div class=" col-xs-6 nopadding">
+                              <img class="pull-left print-img" src="./img/dashboard/smartcv/maya.png" alt="">
+                           </div>
+                           <div class="nopadding col-xs-6 ">
+                              <p class="caption">Completed a course on Illustrator<br>
+                                 Completed a 30 minute online course on Lynda.com
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-xs-6 ">
+                        <div class="row ">
+                           <div class="col-xs-6 nopadding">
+                              <img class="pull-left print-img" src="./img/dashboard/smartcv/maya.png" alt="">
+                           </div>
+                           <div class="nopadding col-xs-6">
+                              <p class="caption">Completed a course on Illustrator<br>
+                                 Completed a 30 minute online course on Lynda.com
+                              </p>
+                           </div>
+                           <div class="col-xs-6 nopadding">
+                              <img class="pull-left print-img" src="./img/dashboard/smartcv/maya.png" alt="">
+                           </div>
+                           <div class="nopadding col-xs-6">
+                              <p class="caption">Completed a course on Illustrator<br>
+                                 Completed a 30 minute online course on Lynda.com
+                              </p>
+                           </div>
+                           <div class="col-xs-6 nopadding">
+                              <img class="pull-left print-img" src="./img/dashboard/smartcv/maya.png" alt="">
+                           </div>
+                           <div class="nopadding col-xs-6">
+                              <p class="caption">Completed a course on Illustrator<br>
+                                 Completed a 30 minute online course on Lynda.com
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+                     <p>& 9 more accomplishments</p>
+                  </div>
+                  <div  id="smartCarousel-3" class="carousel slide smartCarousel do-not-print" data-ride="carousel">
+                     <!-- Carousel items -->
+                     <div class="carousel-inner">
+                        <div class="item active">
+                           <div class="row">
+                              <div class="col-xs-4 hover_img">
+                                 <img class="thumbnail" src="./img/dashboard/smartcv/maya.png" alt="">
+                                 <span>
+                                    <img class="thumbnail" src="./img/dashboard/smartcv/badeg-hover.png" />
+                                    <p class="text-content thumbnail">Watched a lynda tutorial on using photoshop</p>
+                                 </span>
+                              </div>
+                              <div class="col-xs-4 hover_img">
+                                 <img class="thumbnail" src="./img/dashboard/smartcv/maya.png"  alt="">
+                                 <span>
+                                    <img class="thumbnail" src="./img/dashboard/smartcv/badeg-hover.png" />
+                                    <p class="text-content thumbnail ">Watched a lynda tutorial on using photoshop</p>
+                                 </span>
+                              </div>
+                              <div class="col-xs-4 hover_img">
+                                 <img class="thumbnail" src="./img/dashboard/smartcv/maya.png" alt="">
+                                 <span>
+                                    <img class="thumbnail" src="./img/dashboard/smartcv/badeg-hover.png" />
+                                    <p class="text-content thumbnail">Watched a lynda tutorial on using photoshop</p>
+                                 </span>
+                              </div>
+                           </div>
+                           <!--/row-->
+                        </div>
+                        <!--/item-->
+                        <div class="item">
+                           <div class="row">
+                              <div class="col-xs-4 hover_img">
+                                 <img class="thumbnail" src="./img/dashboard/smartcv/maya.png" alt="">
+                                 <span>
+                                    <img class="thumbnail" src="./img/dashboard/smartcv/badeg-hover.png" />
+                                    <p class="text-content thumbnail">Watched a lynda tutorial on using photoshop</p>
+                                 </span>
+                              </div>
+                              <div class="col-xs-4 hover_img">
+                                 <img class="thumbnail" src="./img/dashboard/smartcv/maya.png"  alt="">
+                                 <span>
+                                    <img class="thumbnail" src="./img/dashboard/smartcv/badeg-hover.png" />
+                                    <p class="text-content thumbnail ">Watched a lynda tutorial on using photoshop</p>
+                                 </span>
+                              </div>
+                              <div class="col-xs-4 hover_img">
+                                 <img class="thumbnail" src="./img/dashboard/smartcv/maya.png" alt="">
+                                 <span>
+                                    <img class="thumbnail" src="./img/dashboard/smartcv/badeg-hover.png" />
+                                    <p class="text-content thumbnail">Watched a lynda tutorial on using photoshop</p>
+                                 </span>
+                              </div>
+                           </div>
+                           <!--/row-->
+                        </div>
+                        <!--/item-->
+                        <div class="item">
+                           <div class="row">
+                              <div class="col-xs-4 hover_img">
+                                 <img class="thumbnail" src="./img/dashboard/smartcv/maya.png" alt="">
+                                 <span>
+                                    <img class="thumbnail" src="./img/dashboard/smartcv/badeg-hover.png" />
+                                    <p class="text-content thumbnail">Watched a lynda tutorial on using photoshop</p>
+                                 </span>
+                              </div>
+                              <div class="col-xs-4 hover_img">
+                                 <img class="thumbnail" src="./img/dashboard/smartcv/maya.png"  alt="">
+                                 <span>
+                                    <img class="thumbnail" src="./img/dashboard/smartcv/badeg-hover.png" />
+                                    <p class="text-content thumbnail ">Watched a lynda tutorial on using photoshop</p>
+                                 </span>
+                              </div>
+                              <div class="col-xs-4 hover_img">
+                                 <img class="thumbnail" src="./img/dashboard/smartcv/maya.png" alt="">
+                                 <span>
+                                    <img class="thumbnail" src="./img/dashboard/smartcv/badeg-hover.png" />
+                                    <p class="text-content thumbnail">Watched a lynda tutorial on using photoshop</p>
+                                 </span>
+                              </div>
+                           </div>
+                           <!--/row-->
+                        </div>
+                        <!--/item-->
+                     </div>
+                     <a class="left carousel-control fa fa-angle-left fa-3x" href="#smartCarousel-3" role="button" data-slide="prev">
+                     <span class="sr-only">Previous</span></a>
+                     <a class="right carousel-control fa fa-angle-right fa-3x" href="#smartCarousel-3" role="button" data-slide="next">
+                     <span class="sr-only">Next</span></a>
+                  </div>
+               </article>
+               <div class="modal fade modal-sm-s1" tabindex="-1" role="dialog" aria-labelledby="exploreCareer" aria-hidden="true">
+                  <div class="modal-dialog modal-md">
+                     <div class="modal-content card" align="center">
+                        <h2>Graphic Designer Badges</h2>
+                        <p>Reorder your badges as you'd like them to appear on your SmartCV.</p>
+                        <div class= "row">
+           				<ul id="modal-items">
+                          <li draggable="true" ondragenter="dragenter(event)" ondragstart="dragstart(event)" class="borderlist" >
+                     <img class="carousel-img thumbnail" src="./img/dashboard/smartcv/coursera.png" alt="">
+                     </li>
+                            <li draggable="true" ondragenter="dragenter(event)" ondragstart="dragstart(event)">
+                      <img class="carousel-img thumbnail" src="./img/dashboard/smartcv/edraak.png" alt="">
+                     </li>
+                         <li draggable="true" ondragenter="dragenter(event)" ondragstart="dragstart(event)">
+                   <img class="carousel-img thumbnail" src="./img/dashboard/smartcv/lynda.png" alt="">
+                     </li>
+                         <li draggable="true" ondragenter="dragenter(event)" ondragstart="dragstart(event)">
+						 <img class="carousel-img thumbnail" src="./img/dashboard/smartcv/maya.png" alt="">
+						   </li>
+                            </ul>
+                        </div>
+                        <button type="button" class="btn-cancel btn-xlg" data-dismiss="modal">cancel</button>
+                        <button class="btn-primary btn-xlg" type="button">Save</button>
+                     </div>
+                  </div>
+                  <!-- /.modal-content -->
+               </div>
+               <!-- /.modal-dialog -->
+               <div class="modal fade modal-sm-s2" tabindex="-1" role="dialog" aria-labelledby="exploreCareer" aria-hidden="true">
+                  <div class="modal-dialog modal-md">
+                     <div class="modal-content card" align="center">
+                        <h2>Video Game Designer Badges</h2>
+                        <p>Reorder your badges as you'd like them to appear on your SmartCV.</p>
+                        <div class= "row">
+          				<ul id="modal-items">
+                          <li draggable="true" ondragenter="dragenter(event)" ondragstart="dragstart(event)" class="borderlist" >
+                     <img class="carousel-img thumbnail" src="./img/dashboard/smartcv/coursera.png" alt="">
+                     </li>
+                            <li draggable="true" ondragenter="dragenter(event)" ondragstart="dragstart(event)">
+                      <img class="carousel-img thumbnail" src="./img/dashboard/smartcv/edraak.png" alt="">
+                     </li>
+                         <li draggable="true" ondragenter="dragenter(event)" ondragstart="dragstart(event)">
+                   <img class="carousel-img thumbnail" src="./img/dashboard/smartcv/lynda.png" alt="">
+                     </li>
+                         <li draggable="true" ondragenter="dragenter(event)" ondragstart="dragstart(event)">
+						 <img class="carousel-img thumbnail" src="./img/dashboard/smartcv/maya.png" alt="">
+						   </li>
+                            </ul>
+                        </div>
+                        <button type="button" class="btn-cancel btn-xlg" data-dismiss="modal">cancel</button>
+                        <button class="btn-primary btn-xlg" type="button">Save</button>
+                     </div>
+                  </div>
+                  <!-- /.modal-content -->
+               </div>
+               <!-- /.modal-dialog -->
+               <div class="modal fade modal-sm-s3" tabindex="-1" role="dialog" aria-labelledby="exploreCareer" aria-hidden="true">
+                  <div class="modal-dialog modal-md">
+                     <div class="modal-content card" align="center">
+                        <h2>Product Designer Badges</h2>
+                        <p>Reorder your badges as you'd like them to appear on your SmartCV.</p>
+                        <div class= "row">
+						<ul id="modal-items">
+                          <li draggable="true" ondragenter="dragenter(event)" ondragstart="dragstart(event)" class="borderlist" >
+						   <img class="carousel-img thumbnail" src="./img/dashboard/smartcv/coursera.png" alt="">
+						   </li>
+                            <li draggable="true" ondragenter="dragenter(event)" ondragstart="dragstart(event)">
+							 <img class="carousel-img thumbnail" src="./img/dashboard/smartcv/edraak.png" alt="">
+						   </li>
+                         <li draggable="true" ondragenter="dragenter(event)" ondragstart="dragstart(event)">
+						 <img class="carousel-img thumbnail" src="./img/dashboard/smartcv/lynda.png" alt="">
+						   </li>
+                     <li draggable="true" ondragenter="dragenter(event)" ondragstart="dragstart(event)">
+                   <img class="carousel-img thumbnail" src="./img/dashboard/smartcv/maya.png" alt="">
+                     </li>
+                            </ul>
+
+                        </div>
+                        <button type="button" class="btn-cancel btn-xlg" data-dismiss="modal">cancel</button>
+                        <button class="btn-primary btn-xlg" type="button">Save</button>
+                     </div>
+                  </div>
+                  <!-- /.modal-content -->
+               </div>
+               <!-- /.modal-dialog -->
+            </div>
+            <!-- /.modal -->
+            <div class="noScreen">
+               <img class="smartable-right" src="./img/dashboard/smartcv/Smartable-logo-Printable-color.png" alt="">
+            </div>
+         </div>
+         <!--content second col End-->
+      </div>
+      <!--content row End-->
+
+      <!--div Container End-->
+ <!------smart cv eidt mode------------>
+      <script>
+         var button = document.getElementById("Esmart");
+         var button2 = document.getElementById("Shsmart");
+         var d4=document.getElementById("Edit-pencile");
+         function showMore() {
+          button.style.display="none";
+         button2.style.display="none";
+          document.getElementById("Edit").style.display="block";
+         d4.style.display="block";
+         document.getElementById("Epen1").style.display="block";
+         document.getElementById("Epen2").style.display="block";
+         document.getElementById("Epen3").style.display="block";
+         document.getElementById("Epen4").style.display="block";
+         document.getElementById("Epen5").style.display="block";
+         }
+
+         function showLess() {
+        button.style.display="inline-block";
+         button2.style.display="inline-block";
+          document.getElementById("Edit").style.display="none";
+         d4.style.display="none";
+         document.getElementById("Epen1").style.display="none";
+         document.getElementById("Epen2").style.display="none";
+         document.getElementById("Epen3").style.display="none";
+         document.getElementById("Epen4").style.display="none";
+         document.getElementById("Epen5").style.display="none";
+         }
+      </script>
+<!---------  smart cv sort badges------------------------->
+	  <script>
+	  var source;
+
+function isbefore(a, b) {
+    if (a.parentNode == b.parentNode) {
+        for (var cur = a; cur; cur = cur.previousSibling) {
+            if (cur === b) {
+                return true;
+            }
+        }
+    }
+    return false;
+}
+
+function dragenter(e) {
+    if (isbefore(source, e.target)) {
+        e.target.parentNode.insertBefore(source, e.target);
+    }
+    else {
+        e.target.parentNode.insertBefore(source, e.target.nextSibling);
+    }
+}
+
+function dragstart(e) {
+    source = e.target;
+    e.dataTransfer.effectAllowed = 'move';
+}
+	  </script>
+	   <!-------------mobile nav------------------>
+     <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="js/jasny-bootstrap.min.js"></script>
+      <!-------------radar chart------------------>
+      <script src="js/d3.v3.min.js"></script>
+      <script src="js/RadarChart.js"></script>
+      <script type="text/javascript" src="js/script.js"></script>
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      <!-- Include all compiled plugins (below), or include individual files as needed -->
+      <script src="js/bootstrap-select.min.js"></script>
+      <!-- Latest compiled and minified JavaScript -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+   </body>
+</html>
